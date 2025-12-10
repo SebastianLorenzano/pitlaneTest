@@ -6,7 +6,7 @@ import LanguageSwitcher from "./LanguageSwitcher"
 
 function Navbar(): React.JSX.Element {
   const [menuOpen, setMenuOpen] = useState(false)
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
 
   const openMenu = () => {
     setMenuOpen(true)
