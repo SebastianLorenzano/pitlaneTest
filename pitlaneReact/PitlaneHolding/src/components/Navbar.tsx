@@ -85,6 +85,7 @@ function Navbar(): React.JSX.Element {
 
               {/* Mobile Hamburger */}
               <div className="md:hidden flex items-center">
+                <LanguageSwitcher />
                 <button onClick={openMenu} className="text-[var(--color-text-muted)] focus:outline-none">
                   <div className="space-y-1">
                     <span className="hamburger-line"></span>
@@ -127,8 +128,6 @@ function Navbar(): React.JSX.Element {
           <a href="#download" className="navbar-link text-[var(--color-text-muted)] font-medium text-lg py-2 border-b border-gray-700">
             {t("navbar.download")}
           </a>
-
-          <LanguageSwitcher />
         </div>
       </div>
     </>
