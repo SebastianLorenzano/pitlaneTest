@@ -18,10 +18,6 @@ function Navbar(): React.JSX.Element {
     document.body.style.overflow = "auto"
   }
 
-  const changeLang = (lng: string) => {
-    i18n.changeLanguage(lng)
-  }
-
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") closeMenu()
@@ -43,7 +39,7 @@ function Navbar(): React.JSX.Element {
   return (
     <>
       <header className="sticky top-0 z-50 font-orbitron">
-        <nav className="bg-[var(--color-primary)] shadow-lg">
+        <nav className="bg-[var(--color-primary)] shadow-lg opacity-95 backdrop-blur-sm">
           <div className="mx-auto px-6">
             <div className="flex justify-between items-center py-3">
 
