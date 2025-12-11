@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import ContactForm from "../forms/ContactForm";
-import backgroundImage from "../../assets/img/background4.png";
+import backgroundImage from "../../assets/img/background5.png";
 
 function ContactSection(): React.JSX.Element {
   const [visible, setVisible] = useState(false);
