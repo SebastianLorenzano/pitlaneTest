@@ -141,7 +141,7 @@ const FormBase: React.FC<FormBaseProps> = ({
                   className={`
                     w-full p-3 rounded-md bg-white/10 text-[var(--color-text-muted)] text-sm 
                     outline-none transition-all placeholder-[var(--color-text-muted)] 
-                    font-orbitron
+                    font-orbitron resize-none
                     ${errors[field.name] ? "border border-red-500" : "border border-white/10"}
                     ${disabled ? "opacity-50 cursor-not-allowed" : ""}
                     focus:border-[var(--color-primary-hover)] 
