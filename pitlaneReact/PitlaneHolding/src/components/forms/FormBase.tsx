@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import type { ChangeEvent, FormEvent } from "react";
 
+/* =========================
+   TYPES
+========================= */
+
 export interface Field {
   name: string;
   label: string;
@@ -16,10 +20,25 @@ interface FormBaseProps {
   fields: Field[];
   onSubmit?: (data: Record<string, string>) => void;
 
-  disabled?: boolean;       // sending or sent
+  disabled?: boolean;
   isSubmitting?: boolean;
-  isSent?: boolean;         // NEW
+  isSent?: boolean;
 }
+
+/* =========================
+   VALIDATION HELPERS
+========================= */
+
+function isValidPhoneNumber(value: string): boolean {
+  if (!value) return true; // optional field
+
+  const cleaned = value.replace(/[\s\-()]/g, "");
+  return /^\+?\d{7,15}$/.test(cleaned);
+}
+
+/* =========================
+   COMPONENT
+========================= */
 
 const FormBase: React.FC<FormBaseProps> = ({
   title,
@@ -32,27 +51,55 @@ const FormBase: React.FC<FormBaseProps> = ({
   const { t } = useTranslation();
 
   const [formData, setFormData] = useState<Record<string, string>>({});
+  const [errors, setErrors] = useState<Record<string, string>>({});
+
+  /* =========================
+     HANDLERS
+  ========================= */
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
 
-    // If user edits something after success → unlock the form again
-    if (isSent) {
-      // You inform ContactForm that the form is no longer "sent"
-      // So ContactForm must have a setter or an event
-      // But since this is inside FormBase, we just allow editing here
-      // ContactForm-side logic will depend on your needs
-    }
-
     setFormData((prev) => ({ ...prev, [name]: value }));
+
+    // Clear field error on edit
+    setErrors((prev) => {
+      if (!prev[name]) return prev;
+      const copy = { ...prev };
+      delete copy[name];
+      return copy;
+    });
   };
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!disabled && onSubmit) onSubmit(formData);
+
+    if (disabled || !onSubmit) return;
+
+    const newErrors: Record<string, string> = {};
+
+    fields.forEach((field) => {
+      const value = formData[field.name] || "";
+
+      // Phone validation
+      if (field.type === "tel" && !isValidPhoneNumber(value)) {
+        newErrors[field.name] = t("contact.validation.invalidNumber");
+      }
+    });
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
+    }
+
+    onSubmit(formData);
   };
+
+  /* =========================
+     RENDER
+  ========================= */
 
   return (
     <div className="w-full flex justify-center">
@@ -62,7 +109,6 @@ const FormBase: React.FC<FormBaseProps> = ({
                    p-10 rounded-2xl shadow-[0_0_20px_rgba(0,200,255,0.15)]
                    border border-white/10 backdrop-blur-sm text-center"
       >
-
         <h2 className="text-3xl md:text-4xl font-orbitron text-[var(--color-primary-neon)] drop-shadow-[0_1px_2px_rgba(0,0,0,0.4)]">
           {title}
         </h2>
@@ -96,8 +142,9 @@ const FormBase: React.FC<FormBaseProps> = ({
                     w-full p-3 rounded-md bg-white/10 text-[var(--color-text-muted)] text-sm 
                     outline-none transition-all placeholder-[var(--color-text-muted)] 
                     font-orbitron
+                    ${errors[field.name] ? "border border-red-500" : "border border-white/10"}
                     ${disabled ? "opacity-50 cursor-not-allowed" : ""}
-                    focus:border focus:border-[var(--color-primary-hover)] 
+                    focus:border-[var(--color-primary-hover)] 
                     focus:bg-white/15 focus:shadow-lg
                   `}
                 />
@@ -114,17 +161,23 @@ const FormBase: React.FC<FormBaseProps> = ({
                   className={`
                     w-full p-3 rounded-md bg-white/10 text-[var(--color-text-muted)] text-sm 
                     font-orbitron placeholder-[var(--color-text-muted)] outline-none 
-                    transition-all border border-white/10
+                    transition-all
+                    ${errors[field.name] ? "border border-red-500" : "border border-white/10"}
                     ${disabled ? "opacity-50 cursor-not-allowed" : ""}
                     focus:border-[var(--color-accent)] focus:bg-white/15 
                     focus:shadow-[0_0_10px_rgba(0,200,255,0.2)]
                   `}
                 />
               )}
+
+              {errors[field.name] && (
+                <span className="mt-1 text-xs text-red-400 font-orbitron">
+                  {errors[field.name]}
+                </span>
+              )}
             </div>
           ))}
 
-          {/* BUTTON */}
           <button
             type="submit"
             disabled={disabled}

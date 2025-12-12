@@ -66,6 +66,13 @@
     "contact": {
         "title": "¿Te interesa invertir?",
         "subtitle": "Completa el formulario y un miembro del equipo te contactará lo antes posible.",
+        "placeholders": {
+            "name": "Ingresa tu nombre completo",
+            "email": "Ingresa tu correo electrónico",
+            "number": "(+34) 600 000 000",
+            "company": "Ingresa el nombre de tu empresa o fondo de inversión",
+            "message": "Escribe tu mensaje aquí"
+        },
         "button": {
             "send": "Enviar",
             "sending": "Enviando...",
@@ -79,7 +86,9 @@
             "company": "Empresa / Fondo de inversión",
             "message": "Mensaje"
         },
-
+        "validation": {
+            "invalidNumber": "Por favor, introduce un número de teléfono válido"
+        },
         "modal": {
             "successTitle": "¡Formulario enviado!",
             "successMessage": "Tu mensaje ha sido enviado correctamente.",

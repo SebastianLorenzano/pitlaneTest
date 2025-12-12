@@ -72,6 +72,13 @@
   "contact": {
     "title": "Interessado em investir?",
     "subtitle": "Preencha o formulário abaixo e entraremos em contato o mais breve possível.",
+    "placeholders": {
+        "name": "Insira o seu nome completo",
+        "email": "Insira o seu endereço de e-mail",
+        "number": "(+351) 912 345 678",
+        "company": "Insira o nome da sua empresa ou fundo de investimento",
+        "message": "Escreva a sua mensagem aqui"
+      },
     "button": {
       "send": "Enviar",
       "sending": "Enviando...",
@@ -83,6 +90,9 @@
       "number": "Número de telefone",
       "company": "Empresa / Fundo de investimento",
       "message": "Mensagem"
+    },
+    "validation": {
+      "invalidNumber": "Por favor, insira um número de telefone válido"
     },
     "modal": {
       "successTitle": "Formulário enviado!",

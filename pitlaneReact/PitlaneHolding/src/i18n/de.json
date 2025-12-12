@@ -72,6 +72,13 @@
   "contact": {
     "title": "Interessiert an einer Investition?",
     "subtitle": "Füllen Sie das folgende Formular aus und wir melden uns so schnell wie möglich bei Ihnen.",
+    "placeholders": {
+      "name": "Geben Sie Ihren vollständigen Namen ein",
+      "email": "Geben Sie Ihre E-Mail-Adresse ein",
+      "number": "(+49) 151 23456789",
+      "company": "Geben Sie den Namen Ihres Unternehmens oder Investmentfonds ein",
+      "message": "Schreiben Sie hier Ihre Nachricht"
+    },
     "button": {
       "send": "Senden",
       "sending": "Wird gesendet...",
@@ -83,6 +90,9 @@
       "number": "Telefonnummer",
       "company": "Unternehmen / Investmentfonds",
       "message": "Nachricht"
+    },
+    "validation": {
+      "invalidNumber": "Bitte geben Sie eine gültige Telefonnummer ein"
     },
     "modal": {
       "successTitle": "Formular gesendet!",
