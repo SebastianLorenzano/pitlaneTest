@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { createPortal } from "react-dom";
 
 interface ModalProps {
   open: boolean;
@@ -18,19 +19,34 @@ const Modal: React.FC<ModalProps> = ({
   type = "success",
 }) => {
   const [animate, setAnimate] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  // Ensure portal target exists (important for SSR safety)
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     if (open) {
-      // allow Tailwind to apply the initial hidden state before animating
-      requestAnimationFrame(() => {
-        setAnimate(true);
-      });
+      requestAnimationFrame(() => setAnimate(true));
     } else {
       setAnimate(false);
     }
   }, [open]);
 
-  if (!open) return null;
+  // Block background scroll completely
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
+
+  if (!mounted || !open) return null;
 
   const color =
     type === "success"
@@ -39,14 +55,30 @@ const Modal: React.FC<ModalProps> = ({
       ? "text-yellow-400"
       : "text-red-400";
 
-  return (
-    <div className="fixed inset-0 flex justify-center items-start z-50 pointer-events-none">
+  return createPortal(
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center">
+      {/* BACKDROP — blocks all interaction */}
       <div
         className={`
-          pointer-events-auto bg-[#0e1a29] text-white w-[90%] max-w-md p-6 rounded-xl shadow-xl border border-[#15415c]
-          transform transition-all duration-300 ease-out
-          ${animate ? "opacity-100 translate-y-6" : "opacity-0 -translate-y-10"}
+          absolute inset-0 bg-black/70 backdrop-blur-sm
+          transition-opacity duration-300
+          ${animate ? "opacity-100" : "opacity-0"}
         `}
+        onClick={onClose}
+      />
+
+      {/* MODAL */}
+      <div
+        className={`
+          relative z-10 bg-[#0e1a29] text-white
+          w-[90%] max-w-md p-6 rounded-xl
+          border border-[#15415c]
+          shadow-[0_0_50px_rgba(0,0,0,0.8)]
+          transform transition-all duration-300 ease-out
+          ${animate ? "opacity-100 scale-100" : "opacity-0 scale-95"}
+        `}
+        role="dialog"
+        aria-modal="true"
       >
         <h3 className={`text-xl font-semibold mb-2 ${color}`}>
           {title}
@@ -71,7 +103,8 @@ const Modal: React.FC<ModalProps> = ({
           Cerrar
         </button>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 };
 

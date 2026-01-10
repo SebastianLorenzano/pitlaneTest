@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import ContactForm from "../forms/ContactForm";
-import backgroundImage from "../../assets/img/background4.png";
+import backgroundImage from "../../assets/img/background5.png";
 
 function ContactSection(): React.JSX.Element {
   const [visible, setVisible] = useState(false);
@@ -22,9 +22,15 @@ function ContactSection(): React.JSX.Element {
     <section
       ref={sectionRef}
       id="contact"
-      className="relative overflow-hidden font-orbitron flex items-center justify-center px-6"
+      className="
+        relative overflow-hidden font-orbitron
+        flex items-center justify-center
+        px-6
+        py-[clamp(4rem,8vh,10rem)]
+      "
       style={{ minHeight: "calc(100vh - 7rem)" }}
     >
+
       {/* Background */}
       <div
         className="absolute inset-0 z-[-20] bg-fixed bg-cover bg-center"
@@ -37,8 +43,10 @@ function ContactSection(): React.JSX.Element {
       {/* Content */}
       <div
         className={`
-          w-full max-w-3xl mx-auto transition-all duration-700
-          flex flex-col items-center justify-center     /* center vertically + horizontally */
+          w-full max-w-3xl mx-auto
+          transition-all duration-700
+          flex flex-col items-center justify-center
+          min-h-[70vh]
           ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
         `}
       >

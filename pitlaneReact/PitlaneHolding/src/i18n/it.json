@@ -72,6 +72,13 @@
   "contact": {
     "title": "Interessato a investire?",
     "subtitle": "Compila il modulo qui sotto e ti risponderemo il prima possibile.",
+    "placeholders": {
+      "name": "Inserisci il tuo nome completo",
+      "email": "Inserisci il tuo indirizzo email",
+      "number": "(+39) 312 345 6789",
+      "company": "Inserisci il nome della tua azienda o fondo di investimento",
+      "message": "Scrivi qui il tuo messaggio"
+    },
     "button": {
       "send": "Invia",
       "sending": "Invio...",
@@ -83,6 +90,9 @@
       "number": "Numero di telefono",
       "company": "Azienda / Fondo di investimento",
       "message": "Messaggio"
+    },
+    "validation": {
+      "invalidNumber": "Inserisci un numero di telefono valido"
     },
     "modal": {
       "successTitle": "Modulo inviato!",

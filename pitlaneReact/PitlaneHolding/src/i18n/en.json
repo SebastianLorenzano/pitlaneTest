@@ -67,6 +67,13 @@
     "contact": {
         "title": "Interested in investing?",
         "subtitle": "Fill out the form below and we will get back to you as soon as possible.",
+        "placeholders": {
+        "name": "Enter your full name",
+        "email": "Enter your email address",
+        "number": "(+1) 555 123 4567",
+        "company": "Enter the name of your company or investment fund",
+        "message": "Write your message here"
+        },
         "button": {
             "send": "Send",
             "sending": "Sending...",
@@ -78,6 +85,9 @@
             "number": "Phone Number",
             "company": "Company / Investment Fund",
             "message": "Message"
+        },
+        "validation": {
+            "invalidNumber": "Please enter a valid phone number"
         },
         "modal": {
             "successTitle": "Form sent!",

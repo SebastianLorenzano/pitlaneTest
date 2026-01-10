@@ -6,7 +6,7 @@ import LanguageSwitcher from "./LanguageSwitcher"
 
 function Navbar(): React.JSX.Element {
   const [menuOpen, setMenuOpen] = useState(false)
-  const { t, i18n } = useTranslation()
+  const { t } = useTranslation()
 
   const openMenu = () => {
     setMenuOpen(true)
@@ -16,10 +16,6 @@ function Navbar(): React.JSX.Element {
   const closeMenu = () => {
     setMenuOpen(false)
     document.body.style.overflow = "auto"
-  }
-
-  const changeLang = (lng: string) => {
-    i18n.changeLanguage(lng)
   }
 
   useEffect(() => {
@@ -43,7 +39,7 @@ function Navbar(): React.JSX.Element {
   return (
     <>
       <header className="sticky top-0 z-50 font-orbitron">
-        <nav className="bg-[var(--color-primary)] shadow-lg">
+        <nav className="bg-[var(--color-primary)] shadow-lg opacity-95 backdrop-blur-sm">
           <div className="mx-auto px-6">
             <div className="flex justify-between items-center py-3">
 
@@ -85,6 +81,7 @@ function Navbar(): React.JSX.Element {
 
               {/* Mobile Hamburger */}
               <div className="md:hidden flex items-center">
+                <LanguageSwitcher />
                 <button onClick={openMenu} className="text-[var(--color-text-muted)] focus:outline-none">
                   <div className="space-y-1">
                     <span className="hamburger-line"></span>
@@ -127,8 +124,6 @@ function Navbar(): React.JSX.Element {
           <a href="#download" className="navbar-link text-[var(--color-text-muted)] font-medium text-lg py-2 border-b border-gray-700">
             {t("navbar.download")}
           </a>
-
-          <LanguageSwitcher />
         </div>
       </div>
     </>

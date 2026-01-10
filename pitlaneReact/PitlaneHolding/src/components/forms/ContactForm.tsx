@@ -17,12 +17,40 @@ const ContactForm: React.FC = () => {
   const [isSent, setIsSent] = useState(false);
 
   const fields: Field[] = [
-    { name: "name", label: t("contact.fields.name"), type: "text", required: true },
-    { name: "email", label: t("contact.fields.email"), type: "email", required: true },
-    { name: "number", label: t("contact.fields.number"), type: "tel" },
-    { name: "company", label: t("contact.fields.company"), type: "text" },
-    { name: "message", label: t("contact.fields.message"), type: "textarea", rows: 5 }
-  ];
+      {
+        name: "name",
+        label: t("contact.fields.name"),
+        type: "text",
+        required: true,
+        placeholder: t("contact.placeholders.name")
+      },
+      {
+        name: "email",
+        label: t("contact.fields.email"),
+        type: "email",
+        required: true,
+        placeholder: t("contact.placeholders.email")
+      },
+      {
+        name: "number",
+        label: t("contact.fields.number"),
+        type: "tel",
+        placeholder: t("contact.placeholders.number")
+      },
+      {
+        name: "company",
+        label: t("contact.fields.company"),
+        type: "text",
+        placeholder: t("contact.placeholders.company")
+      },
+      {
+        name: "message",
+        label: t("contact.fields.message"),
+        type: "textarea",
+        rows: 5,
+        placeholder: t("contact.placeholders.message")
+      }
+    ];
 
   async function handleSubmit(data: Record<string, string>) {
     if (isSubmitting || isSent) return;

@@ -72,6 +72,13 @@
   "contact": {
     "title": "Intéressé par un investissement ?",
     "subtitle": "Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.",
+    "placeholders": {
+      "name": "Entrez votre nom complet",
+      "email": "Entrez votre adresse e-mail",
+      "number": "(+33) 6 12 34 56 78",
+      "company": "Entrez le nom de votre entreprise ou fonds d’investissement",
+      "message": "Écrivez votre message ici"
+    },
     "button": {
       "send": "Envoyer",
       "sending": "Envoi...",
@@ -83,6 +90,9 @@
       "number": "Numéro de téléphone",
       "company": "Entreprise / Fonds d’investissement",
       "message": "Message"
+    },
+        "validation": {
+      "invalidNumber": "Veuillez saisir un numéro de téléphone valide"
     },
     "modal": {
       "successTitle": "Formulaire envoyé !",
