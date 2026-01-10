@@ -12,6 +12,7 @@ import { GiRaceCar, GiProcessor } from 'react-icons/gi'
 import { useTranslation } from "react-i18next"
 
 import FeatureCard from "../cards/FeatureCard";
+import CircuitAnimation from "../animation/circuit_animation/CircuitAnimation";
 
 import circuitImage from '../../assets/img/circuito.png'
 import backgroundImage from '../../assets/img/background2.png'
@@ -44,10 +45,39 @@ function CircuitInfoSection(): React.JSX.Element {
       <div className="grid lg:grid-cols-2 gap-10 items-center sm:items-start max-w-6xl w-full z-10">
 
         {/* Circuit Image */}
-        <div className="rounded-lg border-2 border-[var(--color-primary-neon)] hover:border-[var(--color-secondary)] 
+        {/* <div className="rounded-lg border-2 border-[var(--color-primary-neon)] hover:border-[var(--color-secondary)] 
                         transition-colors duration-400 overflow-hidden max-w-md mx-auto shadow-xl z-10">
           <img src={circuitImage} alt="Circuito" className="w-full h-auto" />
-        </div>
+        </div> */}
+<div
+  className="rounded-lg border-2 border-[var(--color-primary-neon)]
+             transition-colors duration-400 hover:border-[var(--color-secondary)]
+             overflow-hidden shadow-xl z-10
+             w-full max-w-[380px] sm:max-w-[420px] md:max-w-[460px] lg:max-w-[500px]
+             aspect-[16/9] mx-auto lg:mx-0"
+  style={{
+    // color por defecto
+    ["--dot-color" as any]: "var(--color-primary-neon)"
+  }}
+  onMouseEnter={(e) =>
+    e.currentTarget.style.setProperty(
+      "--dot-color",
+      "var(--color-secondary)"
+    )
+  }
+  onMouseLeave={(e) =>
+    e.currentTarget.style.setProperty(
+      "--dot-color",
+      "var(--color-primary-neon)"
+    )
+  }
+>
+
+            <CircuitAnimation
+              speed={1000}
+              className="w-full"
+            />
+          </div>
 
         {/* Circuit Details */}
         <div className="grid justify-items-center lg:justify-items-start self-center gap-5 text-center lg:text-left text-sm sm:text-base">
