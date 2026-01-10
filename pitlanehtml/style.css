@@ -23,7 +23,7 @@
 }
 
 .cls-1 {
-  fill: none;              /* 👈 ESTO */
+  fill: none;              
   stroke: #111;
   stroke-width: 10;
   stroke-linecap: round;
