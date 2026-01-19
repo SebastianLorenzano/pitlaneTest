@@ -39,6 +39,43 @@
             "locationDesc": "Integer maximus neque a magna ultricies, eget malesuada lacus vehicula. Sed at tellus id magna cursus posuere."
         }
     },
+    "timeline": {
+        "title": "Project roadmap",
+        "subtitle": "Explore each stage to understand how we move from concept to a fully operational motorsport complex.",
+        "stages": [
+        {
+            "title": "Vision",
+            "contentTitle": "Vision & strategic alignment",
+            "contentText": "Define the long-term value, positioning and investment thesis.",
+            "contentDetailedText": "We establish the project’s purpose, target audiences, and strategic differentiation. This includes defining success metrics, the macro roadmap, and ensuring alignment between stakeholders, legal context, and market reality."
+        },
+        {
+            "title": "Feasibility",
+            "contentTitle": "Feasibility & validation",
+            "contentText": "Validate demand, constraints, and the viability of the plan.",
+            "contentDetailedText": "We analyze location constraints, regulations, environmental considerations, traffic and access, potential partners, and the competitive landscape. The output is a feasibility report with risks, mitigation actions, and an actionable go/no-go."
+        },
+        {
+            "title": "Design",
+            "contentTitle": "Masterplan & design",
+            "contentText": "Translate the vision into an actionable and buildable plan.",
+            "contentDetailedText": "We define the circuit layout, zones, high performance center requirements, and infrastructure. This phase includes conceptual design, preliminary budgeting, timeline estimation, and the technical basis for homologation planning."
+        },
+        {
+            "title": "Permits",
+            "contentTitle": "Permits & compliance",
+            "contentText": "Secure legal approvals and align stakeholders.",
+            "contentDetailedText": "We manage permits, municipal requirements, safety standards, and compliance reviews. Stakeholder alignment is critical here: land, engineering, legal, and operational requirements must converge to avoid delays later."
+        },
+        {
+            "title": "Build",
+            "contentTitle": "Construction & execution",
+            "contentText": "Build the infrastructure and track with controlled milestones.",
+            "contentDetailedText": "This stage focuses on execution: earthworks, track surface, facilities, utilities, safety systems, and zone development. We track quality and timeline with milestone-based reporting and continuous risk management."
+        }
+        ]
+    },
+
     "projectDetails": {
         "intro1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id tempus tortor. Fusce aliquet dictum eros id malesuada. Mauris at consequat ipsum. Donec consequat risus ac est viverra convallis. Proin iaculis sed lorem in luctus. Praesent vitae sem sed libero scelerisque laoreet sit amet a mauris.",
         "intro2": "Donec blandit dignissim lacus, sed dapibus libero fringilla in. Sed at tempor sem. Mauris auctor euismod sapien, feugiat gravida lectus porta sed. Nulla vitae leo fringilla, semper mauris id, suscipit elit.",
