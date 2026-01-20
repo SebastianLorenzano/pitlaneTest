@@ -13,8 +13,6 @@ import { useTranslation } from "react-i18next"
 
 import FeatureCard from "../cards/FeatureCard";
 import CircuitAnimation from "../animation/circuit_animation/CircuitAnimation";
-
-import circuitImage from '../../assets/img/circuito.png'
 import backgroundImage from '../../assets/img/background2.png'
 
 function CircuitInfoSection(): React.JSX.Element {
