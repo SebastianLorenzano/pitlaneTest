@@ -9,6 +9,7 @@ import carVideo from "./assets/video/car_intro.mp4";
 import AboutSection from './components/sections/AboutSection'
 import ProjectDetailsSection from './components/sections/ProjectDetailsSection'
 import ProjectTimelineSection from './components/sections/TimelineSection'
+import FAQSection from './components/sections/FAQSection'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <AboutSection />
       <ContactSection />
       <CarVideoSection videoSrc={carVideo} />
+      <FAQSection/>
     </>
   )
 }
