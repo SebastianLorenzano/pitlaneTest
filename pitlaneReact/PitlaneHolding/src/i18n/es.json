@@ -38,6 +38,42 @@
             "locationDesc": "Integer maximus neque a magna ultricies, eget malesuada lacus vehicula. Sed at tellus id magna cursus posuere."
         }
   },
+    "timeline": {
+        "title": "Hoja de ruta del proyecto",
+        "subtitle": "Explora cada etapa para entender cómo pasamos del concepto a un complejo de automovilismo totalmente operativo.",
+        "stages": [
+        {
+            "title": "Visión",
+            "contentTitle": "Visión y alineación estratégica",
+            "contentText": "Definir el valor a largo plazo, el posicionamiento y la tesis de inversión.",
+            "contentDetailedText": "Establecemos el propósito del proyecto, los públicos objetivo y su diferenciación estratégica. Esto incluye definir métricas de éxito, el roadmap macro y asegurar la alineación entre los stakeholders, el marco legal y la realidad del mercado."
+        },
+        {
+            "title": "Viabilidad",
+            "contentTitle": "Viabilidad y validación",
+            "contentText": "Validar la demanda, las restricciones y la viabilidad del plan.",
+            "contentDetailedText": "Analizamos restricciones de ubicación, normativa, consideraciones ambientales, tráfico y accesos, posibles socios y el panorama competitivo. El resultado es un informe de viabilidad con riesgos, medidas de mitigación y una decisión accionable de go/no-go."
+        },
+        {
+            "title": "Diseño",
+            "contentTitle": "Plan director y diseño",
+            "contentText": "Traducir la visión en un plan accionable y construible.",
+            "contentDetailedText": "Definimos el trazado del circuito, las zonas, los requisitos del centro de alto rendimiento y la infraestructura. Esta fase incluye diseño conceptual, presupuesto preliminar, estimación de plazos y la base técnica para planificar la homologación."
+        },
+        {
+            "title": "Permisos",
+            "contentTitle": "Permisos y cumplimiento",
+            "contentText": "Asegurar aprobaciones legales y alinear a los actores clave.",
+            "contentDetailedText": "Gestionamos permisos, requisitos municipales, estándares de seguridad y revisiones de cumplimiento. La alineación de stakeholders es crítica: terreno, ingeniería, legal y operación deben converger para evitar retrasos más adelante."
+        },
+        {
+            "title": "Construcción",
+            "contentTitle": "Construcción y ejecución",
+            "contentText": "Construir la infraestructura y la pista con hitos controlados.",
+            "contentDetailedText": "Esta etapa se centra en la ejecución: movimientos de tierra, firme de pista, instalaciones, suministros, sistemas de seguridad y desarrollo de zonas. Controlamos calidad y plazos con reporting por hitos y gestión continua de riesgos."
+        }
+        ]
+    },
     "projectDetails": {
         "intro1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id tempus tortor. Fusce aliquet dictum eros id malesuada. Mauris at consequat ipsum. Donec consequat risus ac est viverra convallis. Proin iaculis sed lorem in luctus. Praesent vitae sem sed libero scelerisque laoreet sit amet a mauris.",
         "intro2": "Donec blandit dignissim lacus, sed dapibus libero fringilla in. Sed at tempor sem. Mauris auctor euismod sapien, feugiat gravida lectus porta sed. Nulla vitae leo fringilla, semper mauris id, suscipit elit.",

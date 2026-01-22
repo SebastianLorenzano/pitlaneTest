@@ -140,6 +140,31 @@
     "download": {
         "title": "Download the Full Project Plan",
         "button": "Download Project"
+    },
+    "faq": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "Answers to the most common questions from investors and partners.",
+        "items": [
+            {
+            "question": "What stage is the project currently in?",
+            "answer": "The project is currently in the feasibility and design phase, with preliminary studies, planning, and stakeholder alignment underway."
+            },
+            {
+            "question": "What type of investors is this project aimed at?",
+            "answer": "The project is designed for private investors, investment funds, strategic partners, and organizations interested in long-term infrastructure and motorsport-related assets."
+            },
+            {
+            "question": "What is the expected timeline for construction?",
+            "answer": "Construction timelines depend on permits and final approvals, but the estimated execution phase spans multiple controlled milestones over several stages."
+            },
+            {
+            "question": "Will the circuit host international competitions?",
+            "answer": "Yes. The project is designed to meet FIA Grade 1 standards, enabling the possibility of hosting international motorsport events."
+            },
+            {
+            "question": "How can I receive the full project documentation?",
+            "answer": "You can download the complete project plan from the website or contact us directly for detailed investment documentation."
+            }
+        ]
     }
-
 }
