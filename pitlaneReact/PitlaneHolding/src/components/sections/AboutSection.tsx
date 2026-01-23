@@ -54,12 +54,12 @@ function AboutSection(): React.JSX.Element {
       >
         {/* Paragraph 1 */}
         <p className="text-md md:text-lg text-[var(--color-text-muted)] px-4 mb-6 whitespace-pre-line">
-          {t("about.paragraph1")}
+          {t("paragraph1")}
         </p>
 
         {/* Paragraph 2 */}
         <p className="text-sm md:text-md text-[var(--color-text-muted)] px-4 mb-10 whitespace-pre-line">
-          {t("about.paragraph2")}
+          {t("paragraph2")}
         </p>
 
         {/* Buttons */}
@@ -76,7 +76,7 @@ function AboutSection(): React.JSX.Element {
                       hover:bg-[var(--color-primary-neon)] hover:text-[var(--color-primary)]
                       hover:scale-105 transition-all duration-300 inline-block"
           >
-            {t("about.contact")}
+            {t("contact")}
           </a>
 
           <a
@@ -86,7 +86,7 @@ function AboutSection(): React.JSX.Element {
                       hover:bg-[var(--color-primary-neon)] hover:text-[var(--color-primary)]
                       hover:scale-105 transition-all duration-300 inline-block"
           >
-            {t("about.download")}
+            {t("download")}
           </a>
         </div>
       </div>

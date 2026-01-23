@@ -8,10 +8,10 @@ type FAQItem = {
 };
 
 export default function FAQSection(): React.ReactElement {
-  var translation = useTranslation();
+  var translation = useTranslation(["faq", "navbar"]);
   var t = translation.t;
 
-  var items = t("faq.items", { returnObjects: true }) as FAQItem[];
+  var items = t("items", { ns: "faq", returnObjects: true }) as FAQItem[];
 
   var [openIndex, setOpenIndex] = useState<number | null>(null);
 
@@ -41,13 +41,13 @@ export default function FAQSection(): React.ReactElement {
       {/* Content */}
       <div className="relative z-10 text-[var(--color-text-muted)] px-4">
         <div className="mx-auto w-full max-w-5xl">
-          {/* Header (same vibe as Hero: centered + clean) */}
+          {/* Header */}
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-semibold">
-              {t("faq.title")}
+              {t("title", { ns: "faq" })}
             </h2>
             <p className="mt-3 text-[var(--color-text-muted)]/70">
-              {t("faq.subtitle")}
+              {t("subtitle", { ns: "faq" })}
             </p>
           </div>
 
@@ -63,7 +63,6 @@ export default function FAQSection(): React.ReactElement {
                              bg-[var(--color-primary)]/20 backdrop-blur-md
                              shadow-lg"
                 >
-                  {/* Header Button (styled like Hero buttons) */}
                   <button
                     type="button"
                     onMouseDown={preventFocus}
@@ -79,7 +78,6 @@ export default function FAQSection(): React.ReactElement {
                       {item.question}
                     </span>
 
-                    {/* Plus icon (neon + animated like your hover scaling) */}
                     <span
                       className={[
                         "grid place-items-center h-9 w-9 rounded-lg border-2",
@@ -93,7 +91,6 @@ export default function FAQSection(): React.ReactElement {
                     </span>
                   </button>
 
-                  {/* Answer (smooth open/close) */}
                   <div
                     className={[
                       "overflow-hidden transition-all duration-300 px-5 sm:px-6",
@@ -109,7 +106,7 @@ export default function FAQSection(): React.ReactElement {
             })}
           </div>
 
-          {/* Optional CTA row (Hero-like buttons) */}
+          {/* CTA row */}
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href="#contact"
@@ -117,7 +114,7 @@ export default function FAQSection(): React.ReactElement {
                          font-semibold shadow-lg hover:bg-[var(--color-primary-neon)] hover:text-[var(--color-primary)] 
                          hover:scale-105 transition-all duration-300"
             >
-              {t("navbar.contact")}
+              {t("contact", { ns: "navbar" })}
             </a>
 
             <a
@@ -125,7 +122,7 @@ export default function FAQSection(): React.ReactElement {
               className="px-6 py-3 rounded-lg bg-[var(--color-primary-neon)] text-[var(--color-primary)] font-semibold 
                          shadow-lg hover:scale-105 transition-all duration-300"
             >
-              {t("navbar.download")}
+              {t("download", { ns: "navbar" })}
             </a>
           </div>
         </div>

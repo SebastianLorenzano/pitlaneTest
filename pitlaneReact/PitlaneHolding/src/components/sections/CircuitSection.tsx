@@ -16,7 +16,7 @@ import CircuitAnimation from "../animation/circuit_animation/CircuitAnimation";
 import backgroundImage from '../../assets/img/background2.png'
 
 function CircuitInfoSection(): React.JSX.Element {
-  const { t } = useTranslation()
+  const { t } = useTranslation("circuit")
 
   return (
     <section

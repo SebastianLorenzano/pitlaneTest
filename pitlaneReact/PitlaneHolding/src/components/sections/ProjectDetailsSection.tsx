@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next"
 import backgroundImage from "../../assets/img/background4.png"
 
 function ProjectDetailsSection(): React.JSX.Element {
-  const { t } = useTranslation()
+  const { t } = useTranslation("projectDetails")
 
   const [visible, setVisible] = useState(false)
   const [buttonsVisible, setButtonsVisible] = useState(false)
@@ -26,7 +26,7 @@ function ProjectDetailsSection(): React.JSX.Element {
     return () => clearTimeout(timer)
   }, [visible])
 
-  const visionList: string[] = t("projectDetails.visionList", { returnObjects: true }) as string[]
+  const visionList: string[] = t("visionList", { returnObjects: true }) as string[]
 
   return (
     <section
@@ -53,11 +53,11 @@ function ProjectDetailsSection(): React.JSX.Element {
       >
         {/* MAIN INTRO BLOCK */}
         <p className="text-md md:text-lg px-4 mb-8 leading-relaxed">
-          {t("projectDetails.intro1")}
+          {t("intro1")}
         </p>
 
         <p className="text-sm md:text-md px-4 mb-12 leading-relaxed">
-          {t("projectDetails.intro2")}
+          {t("intro2")}
         </p>
 
         {/* SECTION DIVIDER */}
@@ -71,11 +71,11 @@ function ProjectDetailsSection(): React.JSX.Element {
           `}
         >
           <h2 className="text-xl md:text-2xl text-cyan-300 mb-6 font-semibold">
-            {t("projectDetails.featuresTitle")}
+            {t("featuresTitle")}
           </h2>
 
           <p className="text-sm md:text-md px-4 mb-10 leading-relaxed">
-            {t("projectDetails.featuresDesc")}
+            {t("featuresDesc")}
           </p>
         </div>
 
@@ -90,11 +90,11 @@ function ProjectDetailsSection(): React.JSX.Element {
           `}
         >
           <h2 className="text-xl md:text-2xl text-cyan-300 mb-6 font-semibold">
-            {t("projectDetails.architectureTitle")}
+            {t("architectureTitle")}
           </h2>
 
           <p className="text-sm md:text-md px-4 mb-10 leading-relaxed">
-            {t("projectDetails.architectureDesc")}
+            {t("architectureDesc")}
           </p>
         </div>
 
@@ -109,7 +109,7 @@ function ProjectDetailsSection(): React.JSX.Element {
           `}
         >
           <h2 className="text-xl md:text-2xl text-cyan-300 mb-6 font-semibold">
-            {t("projectDetails.visionTitle")}
+            {t("visionTitle")}
           </h2>
 
           <ul className="text-sm md:text-md px-8 text-left mx-auto max-w-3xl space-y-4 leading-relaxed">

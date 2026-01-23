@@ -20,7 +20,7 @@ export default function TimelineSection(): React.ReactElement {
 
   // Build stages from i18n (re-run on language change)
   useEffect(() => {
-    var raw = t("timeline.stages", { returnObjects: true }) as TimelineStageI18n[] | undefined;
+    var raw = t("stages", { returnObjects: true }) as TimelineStageI18n[] | undefined;
 
     var safeRaw: TimelineStageI18n[] = Array.isArray(raw) ? raw : [];
 
@@ -61,10 +61,10 @@ export default function TimelineSection(): React.ReactElement {
         {/* Header */}
         <div className="mb-12 text-center">
           <h2 className="text-3xl sm:text-4xl font-semibold text-[var(--color-text-muted)]">
-            {t("timeline.title")}
+            {t("title")}
           </h2>
           <p className="mt-3 text-[var(--color-text-muted)]/70">
-            {t("timeline.subtitle")}
+            {t("subtitle")}
           </p>
         </div>
 

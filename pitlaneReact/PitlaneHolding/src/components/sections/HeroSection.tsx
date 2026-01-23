@@ -5,10 +5,10 @@ import backgroundImage from "../../assets/img/background1.png"
 import Lenis from "@studio-freight/lenis"
 
 function HeroSection(): React.JSX.Element {
-  const { t } = useTranslation()
+  const { t } = useTranslation("hero")
 
   // The full text now comes from translations
-  const fullText = t("hero.slogan")
+  const fullText = t("slogan")
 
   const [displayedText, setDisplayedText] = useState("")
   const [buttonsVisible, setButtonsVisible] = useState(false)
@@ -60,7 +60,7 @@ function HeroSection(): React.JSX.Element {
     typeNext()
 
     return () => clearTimeout(timeoutRef.current)
-  }, [fullText]) // important: re-trigger animation when language changes
+  }, [fullText]) // re-trigger animation when language changes
 
   return (
     <main
@@ -101,7 +101,7 @@ function HeroSection(): React.JSX.Element {
                       font-semibold shadow-lg hover:bg-[var(--color-primary-neon)] hover:text-[var(--color-primary)] 
                       hover:scale-105 transition-all duration-300"
           >
-            {t("hero.about")}
+            {t("about")}
           </a>
 
           <a
@@ -109,7 +109,7 @@ function HeroSection(): React.JSX.Element {
             className="px-6 py-3 rounded-lg bg-[var(--color-primary-neon)] text-[var(--color-primary)] font-semibold 
                       shadow-lg hover:scale-105 transition-all duration-300"
           >
-            {t("hero.contact")}
+            {t("contact")}
           </a>
         </div>
       </div>

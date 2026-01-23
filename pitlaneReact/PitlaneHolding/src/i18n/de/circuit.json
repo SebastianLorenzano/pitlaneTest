@@ -1,0 +1,20 @@
+{
+  "title": "A new era for motorsport and high performance",
+  "locationLabel": "Location:",
+  "locationValue": "Agost, Alicante",
+  "surfaceLabel": "Surface:",
+  "surfaceValue": "2,200,000 m²",
+  "homologationLabel": "Homologation:",
+  "homologationValue": "FIA Grade 1",
+  "performanceCenter": "High performance center",
+  "zonesLabel": "Zones:",
+  "zonesValue": "Karting, dirt and simulators",
+  "features": {
+    "structure": "Complete Structure",
+    "structureDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Curabitur ac lorem nec sapien volutpat.",
+    "business": "Profitable business model",
+    "businessDesc": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+    "location": "Strategic Location",
+    "locationDesc": "Integer maximus neque a magna ultricies, eget malesuada lacus vehicula. Sed at tellus id magna cursus posuere."
+  }
+}
