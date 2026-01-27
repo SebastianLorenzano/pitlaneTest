@@ -51,7 +51,7 @@ function ProjectDetailsSection(): React.JSX.Element {
           ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
         `}
       >
-        {/* MAIN INTRO BLOCK */}
+        {/* Main Intro Block */}
         <p className="text-md md:text-lg px-4 mb-8 leading-relaxed">
           {t("intro1")}
         </p>
@@ -60,10 +60,10 @@ function ProjectDetailsSection(): React.JSX.Element {
           {t("intro2")}
         </p>
 
-        {/* SECTION DIVIDER */}
+        {/* Section Divider */}
         <div className="w-full h-px bg-white/20 my-12" />
 
-        {/* FEATURE BLOCK */}
+        {/* Feature Block */}
         <div
           className={`
             transition-all duration-700 delay-200
@@ -79,10 +79,10 @@ function ProjectDetailsSection(): React.JSX.Element {
           </p>
         </div>
 
-        {/* SECTION DIVIDER */}
+        {/* Section Divider */}
         <div className="w-full h-px bg-white/20 my-12" />
 
-        {/* ARCHITECTURE BLOCK */}
+        {/* Architecture Block */}
         <div
           className={`
             transition-all duration-700 delay-300
@@ -98,10 +98,10 @@ function ProjectDetailsSection(): React.JSX.Element {
           </p>
         </div>
 
-        {/* SECTION DIVIDER */}
+        {/* Section Divider */}
         <div className="w-full h-px bg-white/20 my-12" />
 
-        {/* LIST / BULLET BLOCK */}
+        {/* List / Bullet Block */}
         <div
           className={`
             transition-all duration-700 delay-500
@@ -119,7 +119,7 @@ function ProjectDetailsSection(): React.JSX.Element {
           </ul>
         </div>
 
-        {/* EXTRA SPACING */}
+        {/* Extra Spacing */}
         <div className="mt-20" />
       </div>
     </section>
