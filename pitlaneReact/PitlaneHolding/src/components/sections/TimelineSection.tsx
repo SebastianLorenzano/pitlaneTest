@@ -11,7 +11,7 @@ type TimelineStageI18n = {
 };
 
 export default function TimelineSection(): React.ReactElement {
-  var translation = useTranslation();
+  var translation = useTranslation("timeline");
   var t = translation.t;
   var i18n = translation.i18n;
 

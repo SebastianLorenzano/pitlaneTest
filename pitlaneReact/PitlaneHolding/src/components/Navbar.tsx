@@ -6,7 +6,7 @@ import LanguageSwitcher from "./LanguageSwitcher"
 
 function Navbar(): React.JSX.Element {
   const [menuOpen, setMenuOpen] = useState(false)
-  const { t } = useTranslation()
+  const { t } = useTranslation("navbar")
 
   const openMenu = () => {
     setMenuOpen(true)
@@ -58,22 +58,22 @@ function Navbar(): React.JSX.Element {
               <div className="hidden md:flex items-center space-x-4">
 
                 <a href="#project" className="navbar-link text-[var(--color-text-muted)] font-medium text-[1.3rem]">
-                  {t("navbar.project")}
+                  {t("project")}
                 </a>
                 <span className="text-gray-400">|</span>
 
                 <a href="#about-us" className="navbar-link text-[var(--color-text-muted)] font-medium text-[1.3rem]">
-                  {t("navbar.about")}
+                  {t("about")}
                 </a>
                 <span className="text-gray-400">|</span>
 
                 <a href="#contact" className="navbar-link text-[var(--color-text-muted)] font-medium text-[1.3rem]">
-                  {t("navbar.contact")}
+                  {t("contact")}
                 </a>
                 <span className="text-gray-400">|</span>
 
                 <a href="#download" className="navbar-link text-[var(--color-text-muted)] font-medium text-[1.3rem]">
-                  {t("navbar.download")}
+                  {t("download")}
                 </a>
 
                 <LanguageSwitcher />

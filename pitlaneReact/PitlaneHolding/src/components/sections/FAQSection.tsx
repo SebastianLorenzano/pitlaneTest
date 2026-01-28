@@ -8,10 +8,11 @@ type FAQItem = {
 };
 
 export default function FAQSection(): React.ReactElement {
-  var translation = useTranslation(["faq", "navbar"]);
-  var t = translation.t;
+   
+  const { t } = useTranslation(["faq", "navbar"]);
 
-  var items = t("items", { ns: "faq", returnObjects: true }) as FAQItem[];
+  var rawItems = t("items", { ns: "faq", returnObjects: true });
+  var items: FAQItem[] = Array.isArray(rawItems) ? (rawItems as FAQItem[]) : [];
 
   var [openIndex, setOpenIndex] = useState<number | null>(null);
 

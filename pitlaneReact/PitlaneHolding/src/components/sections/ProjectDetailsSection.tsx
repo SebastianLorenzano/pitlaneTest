@@ -26,7 +26,9 @@ function ProjectDetailsSection(): React.JSX.Element {
     return () => clearTimeout(timer)
   }, [visible])
 
-  const visionList: string[] = t("visionList", { returnObjects: true }) as string[]
+  var rawVisionList = t("visionList", { returnObjects: true });
+  var visionList: string[] = Array.isArray(rawVisionList) ? (rawVisionList as string[]) : [];
+
 
   return (
     <section

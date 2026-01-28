@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next"
 import backgroundImage from "../../assets/img/background3.png"
 
 function AboutSection(): React.JSX.Element {
-  const { t } = useTranslation()
+  const { t } = useTranslation("about")
 
   const [visible, setVisible] = useState(false)
   const [buttonsVisible, setButtonsVisible] = useState(false)
