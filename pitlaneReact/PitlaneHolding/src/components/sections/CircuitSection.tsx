@@ -36,7 +36,7 @@ function CircuitInfoSection(): React.JSX.Element {
 
       {/* Title */}
       <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-12 drop-shadow-lg z-10">
-        {t("circuit.title")}
+        {t("title")}
       </h1>
 
       {/* Main Grid */}
@@ -85,7 +85,7 @@ function CircuitInfoSection(): React.JSX.Element {
             <HiLocationMarker className="text-[var(--color-primary-neon)] text-4xl group-hover:text-[var(--color-secondary)] 
                               transition-colors duration-400" />
             <p>
-              <strong>{t("circuit.locationLabel")}</strong> {t("circuit.locationValue")}
+              <strong>{t("locationLabel")}</strong> {t("locationValue")}
             </p>
           </div>
 
@@ -93,7 +93,7 @@ function CircuitInfoSection(): React.JSX.Element {
           <div className="group grid grid-cols-[50px_220px] md:grid-cols-[50px_280px] lg:grid-cols-[50px_auto] items-center gap-4">
             <HiClock className="text-[var(--color-primary-neon)] text-4xl group-hover:text-[var(--color-secondary)] transition-colors duration-400" />
             <p>
-              <strong>{t("circuit.surfaceLabel")}</strong> {t("circuit.surfaceValue")}
+              <strong>{t("surfaceLabel")}</strong> {t("surfaceValue")}
             </p>
           </div>
 
@@ -101,7 +101,7 @@ function CircuitInfoSection(): React.JSX.Element {
           <div className="group grid grid-cols-[50px_220px] md:grid-cols-[50px_280px] lg:grid-cols-[50px_auto] items-center gap-4">
             <HiCheckCircle className="text-[var(--color-primary-neon)] text-4xl group-hover:text-[var(--color-secondary)] transition-colors duration-400" />
             <p>
-              <strong>{t("circuit.homologationLabel")}</strong> {t("circuit.homologationValue")}
+              <strong>{t("homologationLabel")}</strong> {t("homologationValue")}
             </p>
           </div>
 
@@ -109,7 +109,7 @@ function CircuitInfoSection(): React.JSX.Element {
           <div className="group grid grid-cols-[50px_220px] md:grid-cols-[50px_280px] lg:grid-cols-[50px_auto] items-center gap-4 cursor-pointer">
             <FaFlagCheckered className="text-[var(--color-primary-neon)] text-4xl transition-colors duration-400 group-hover:text-[var(--color-secondary)]" />
             <p>
-              <strong>{t("circuit.performanceCenter")}</strong>
+              <strong>{t("performanceCenter")}</strong>
             </p>
           </div>
 
@@ -117,7 +117,7 @@ function CircuitInfoSection(): React.JSX.Element {
           <div className="group grid grid-cols-[50px_220px] md:grid-cols-[50px_280px] lg:grid-cols-[50px_auto] items-center gap-4">
             <GiRaceCar className="text-[var(--color-primary-neon)] text-5xl group-hover:text-[var(--color-secondary)] transition-colors duration-300" />
             <p>
-              <strong>{t("circuit.zonesLabel")}</strong> {t("circuit.zonesValue")}
+              <strong>{t("zonesLabel")}</strong> {t("zonesValue")}
             </p>
           </div>
 
@@ -129,8 +129,8 @@ function CircuitInfoSection(): React.JSX.Element {
         <FeatureCard
           className="group flex flex-col items-center p-6 rounded-xl bg-[var(--color-primary)] shadow-md border border-[var(--color-primary-neon)] transition-colors duration-400 hover:border-[var(--color-secondary)]"
           Icon={GiProcessor}
-          text={t("circuit.features.structure")}
-          details={t("circuit.features.structureDesc")}
+          text={t("features.structure")}
+          details={t("features.structureDesc")}
         />
 
         <FeatureCard
@@ -138,17 +138,17 @@ function CircuitInfoSection(): React.JSX.Element {
           Icon={FaChartLine}
           text={
             <>
-              {t("circuit.features.business")}
+              {t("features.business")}
             </>
           }
-          details={t("circuit.features.businessDesc")}
+          details={t("features.businessDesc")}
         />
 
         <FeatureCard
           className="group flex flex-col items-center p-6 rounded-xl bg-[var(--color-primary)] shadow-md border border-[var(--color-primary-neon)] transition-colors duration-400 hover:border-[var(--color-secondary)]"
           Icon={FaMapMarkedAlt}
-          text={t("circuit.features.location")}
-          details={t("circuit.features.locationDesc")}
+          text={t("features.location")}
+          details={t("features.locationDesc")}
         />
       </div>
 
