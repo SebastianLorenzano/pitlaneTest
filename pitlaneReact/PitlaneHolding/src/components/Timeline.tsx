@@ -1,11 +1,10 @@
 import React from "react";
 
 export type TimelineStage = {
-  id: string;
-  label: string; // node label
-  title: string; // panel title
-  description: string; // short text
-  detailedDescription: string; // long text
+  title: string; // node label (json: "title")
+  contentTitle: string;
+  contentText: string;
+  contentDetailedText: string;
 };
 
 type TimelineProps = {
@@ -109,7 +108,7 @@ export default function Timeline(props: TimelineProps): React.ReactElement {
 
               return (
                 <button
-                  key={stage.id}
+                  key={stage.title}
                   type="button"
                   role="tab"
                   aria-selected={isActive}
@@ -157,7 +156,7 @@ export default function Timeline(props: TimelineProps): React.ReactElement {
                       "group-hover:text-[var(--color-primary-neon)]"
                     ].join(" ")}
                   >
-                    {stage.label}
+                    {stage.title}
                   </span>
                 </button>
               );
