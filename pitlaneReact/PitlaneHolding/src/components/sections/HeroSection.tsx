@@ -3,6 +3,16 @@ import { useTranslation } from "react-i18next"
 import logo from "../../assets/img/logo_noBG.png"
 import backgroundImage from "../../assets/img/background1.png"
 import Lenis from "@studio-freight/lenis"
+import VideoCarousel from "../VideoCarousel.tsx"
+
+import v1 from "../../assets/video/carousel1.mp4"
+import v2 from "../../assets/video/carousel2.mp4"
+import v3 from "../../assets/video/carousel3.mp4"
+
+import p1 from "../../assets/img/poster1.png"
+import p2 from "../../assets/img/poster2.png"
+import p3 from "../../assets/img/poster3.png"
+
 
 function HeroSection(): React.JSX.Element {
   const { t } = useTranslation("hero")
@@ -12,6 +22,12 @@ function HeroSection(): React.JSX.Element {
 
   const [displayedText, setDisplayedText] = useState("")
   const [buttonsVisible, setButtonsVisible] = useState(false)
+
+  const videos = [
+    { id: "v1", srcMp4: v1, poster: p1, title: "Onboard / Track day" },
+    { id: "v2", srcMp4: v2, poster: p2, title: "Facilities / Vision" },
+    { id: "v3", srcMp4: v3, poster: p3, title: "Community / Events" }
+  ]
 
   const indexRef = useRef(0)
   const timeoutRef = useRef<NodeJS.Timeout>()
@@ -112,6 +128,8 @@ function HeroSection(): React.JSX.Element {
             {t("contact")}
           </a>
         </div>
+        <VideoCarousel items={videos} />
+
       </div>
     </main>
   )
