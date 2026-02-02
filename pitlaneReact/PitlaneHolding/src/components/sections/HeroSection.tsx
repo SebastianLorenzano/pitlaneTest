@@ -18,9 +18,10 @@ function HeroSection(): React.JSX.Element {
   const [buttonsVisible, setButtonsVisible] = useState(false)
 
   const youtubeVideos = [
-  { id: "yt1", youtubeId: "Qt1G4wP9iGk", title: "Track concept" },
-  { id: "yt2", youtubeId: "Qt1G4wP9iGk", title: "Facilities teaser" },
-  { id: "yt3", youtubeId: "Qt1G4wP9iGk", title: "Community vision" } ]
+  { id: "yt1", youtubeId: "UYh8ATF8L0c" },
+  { id: "yt2", youtubeId: "1GpGbTXmQu8" },
+  { id: "yt3", youtubeId: "k0Pmj2wxNXw" }
+ ]
 
   const indexRef = useRef(0)
   const timeoutRef = useRef<NodeJS.Timeout>()
@@ -121,7 +122,7 @@ function HeroSection(): React.JSX.Element {
             {t("contact")}
           </a>
         </div>
-        <YouTubeCarousel items={youtubeVideos} autoplayDelayMs={6000} />
+        <YouTubeCarousel items={youtubeVideos} />
 
 
       </div>
