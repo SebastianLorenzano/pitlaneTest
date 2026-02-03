@@ -10,16 +10,18 @@ import AboutSection from './components/sections/AboutSection'
 import ProjectDetailsSection from './components/sections/ProjectDetailsSection'
 import ProjectTimelineSection from './components/sections/TimelineSection'
 import FAQSection from './components/sections/FAQSection'
+import CentreSection from './components/sections/CentreSection'
 
 function App() {
   return (
     <>
       <Navbar />
       <HeroSection />
+      <CentreSection/>
       <CircuitSection />
+      <AboutSection />
       <ProjectTimelineSection/>
       <ProjectDetailsSection />
-      <AboutSection />
       <ContactSection />
       <CarVideoSection videoSrc={carVideo} />
       <FAQSection/>

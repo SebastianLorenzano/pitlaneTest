@@ -18,8 +18,8 @@ function HeroSection(): React.JSX.Element {
   const [buttonsVisible, setButtonsVisible] = useState(false)
 
   const youtubeVideos = [
-  { id: "yt1", youtubeId: "UYh8ATF8L0c" },
-  { id: "yt2", youtubeId: "1GpGbTXmQu8" },
+  { id: "yt1", youtubeId: "1GpGbTXmQu8" },
+  { id: "yt2", youtubeId: "UYh8ATF8L0c" },
   { id: "yt3", youtubeId: "k0Pmj2wxNXw" }
  ]
 

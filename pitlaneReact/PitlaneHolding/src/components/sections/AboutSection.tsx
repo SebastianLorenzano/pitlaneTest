@@ -58,11 +58,27 @@ function AboutSection(): React.JSX.Element {
         </p>
 
         {/* Paragraph 2 */}
-        <p className="text-sm md:text-md text-[var(--color-text-muted)] px-4 mb-10 whitespace-pre-line">
+        <p className="text-md md:text-lg text-[var(--color-text-muted)] px-4 mb-6 whitespace-pre-line">
           {t("paragraph2")}
         </p>
 
+        {/* Paragraph 3 */}
+        <p className="text-md md:text-lg text-[var(--color-text-muted)] px-4 mb-6 whitespace-pre-line">
+          {t("paragraph3")}
+        </p>
+
+        {/* Paragraph 4 */}
+        <p className="text-md md:text-lg text-[var(--color-text-muted)] px-4 mb-6 whitespace-pre-line">
+          {t("paragraph4")}
+        </p>
+
+        {/* Paragraph 5*/}
+        <p className="text-md md:text-lg text-[var(--color-text-muted)] px-4 mb-6 whitespace-pre-line">
+          {t("paragraph5")}
+        </p>
+
         {/* Buttons */}
+        {/*
         <div
           className={`
             mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center transition-all duration-700
@@ -89,6 +105,7 @@ function AboutSection(): React.JSX.Element {
             {t("download")}
           </a>
         </div>
+        */}
       </div>
     </section>
   )

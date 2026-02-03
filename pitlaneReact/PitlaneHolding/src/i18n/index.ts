@@ -7,6 +7,7 @@ var supportedLanguages: SupportedLng[] = ["de", "en", "es", "fr", "it", "pt"];
 
 var namespaces = [
   "about",
+  "centre",
   "circuit",
   "contact",
   "download",
