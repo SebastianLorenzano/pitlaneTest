@@ -94,7 +94,8 @@ function HeroSection(): React.JSX.Element {
           alt="Logo"
         />
 
-        <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl whitespace-normal leading-tight">
+        <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl whitespace-normal leading-tight
+         text-[var(--color-text)]">
           {displayedText}
         </h1>
 

@@ -3,6 +3,9 @@ import { useTranslation } from "react-i18next"
 import { Network, Shield, CheckCircle2, Eye, BadgePercent, Gavel } from "lucide-react"
 import backgroundImage from "../../assets/img/background3.png"
 
+import { type } from "../../ui/typography"
+import { surface } from "../../ui/surfaces"
+
 type AboutCardKey = "structure" | "governance" | "execution"
 type AboutListKey = "protection" | "transparency" | "economicRights"
 
@@ -54,7 +57,6 @@ function AboutSection(): React.JSX.Element {
   const rawLists = t("lists", { returnObjects: true })
   const lists: AboutList[] = Array.isArray(rawLists) ? (rawLists as AboutList[]) : []
 
-
   return (
     <section
       ref={sectionRef}
@@ -80,20 +82,13 @@ function AboutSection(): React.JSX.Element {
       >
         {/* Header */}
         <div className="text-center mb-10">
-          <h2 className="text-3xl md:text-4xl font-semibold text-[var(--color-text)]">
-            {t("title")}
-          </h2>
-
-          <p className="mt-4 text-md md:text-lg text-[var(--color-text-muted)] max-w-3xl mx-auto">
-            {t("subtitle")}
-          </p>
+          <h2 className={type.sectionTitle}>{t("title")}</h2>
+          <p className={type.sectionSubtitle}>{t("subtitle")}</p>
         </div>
 
         {/* Intro */}
         <div className="max-w-4xl mx-auto mb-8 text-center">
-          <p className="text-md md:text-lg text-[var(--color-text-muted)] leading-relaxed whitespace-pre-line">
-            {t("intro")}
-          </p>
+          <p className={type.sectionIntro}>{t("intro")}</p>
         </div>
 
         {/* Subtle divider */}
@@ -101,20 +96,10 @@ function AboutSection(): React.JSX.Element {
           <div className="h-[1px] w-40 bg-[var(--color-primary-neon)]/25" />
         </div>
 
-
         {/* ROW 1: CARDS */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-10">
           {cards.map((item, index) => (
-            <div
-              key={`${item.key}-${index}`}
-              className="
-                rounded-2xl border border-[var(--color-border)]/30
-                bg-[var(--color-panel)]/10 backdrop-blur-md
-                shadow-[0_10px_40px_rgba(0,0,0,0.25)]
-                p-6 transition-all duration-300
-                hover:translate-y-[-4px] hover:border-[var(--color-primary-neon)]/40
-              "
-            >
+            <div key={`${item.key}-${index}`} className={surface.glassCard}>
               <div
                 className="
                   w-10 h-10 rounded-xl flex items-center justify-center
@@ -127,13 +112,8 @@ function AboutSection(): React.JSX.Element {
                 {cardIconMap[item.key]}
               </div>
 
-              <h3 className="text-lg font-semibold text-[var(--color-text)] mb-2">
-                {item.title}
-              </h3>
-
-              <p className="text-sm leading-relaxed text-[var(--color-text-muted)]">
-                {item.text}
-              </p>
+              <h3 className={type.cardTitle}>{item.title}</h3>
+              <p className={type.cardText}>{item.text}</p>
             </div>
           ))}
         </div>
@@ -141,16 +121,7 @@ function AboutSection(): React.JSX.Element {
         {/* ROW 2: LISTS */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {lists.map((block, index) => (
-            <div
-              key={`${block.key}-${index}`}
-              className="
-                rounded-2xl border border-[var(--color-border)]/30
-                bg-[var(--color-panel)]/10 backdrop-blur-md
-                shadow-[0_10px_40px_rgba(0,0,0,0.25)]
-                p-6 transition-all duration-300
-                hover:translate-y-[-4px] hover:border-[var(--color-primary-neon)]/40
-              "
-            >
+            <div key={`${block.key}-${index}`} className={surface.glassCard}>
               <div
                 className="
                   w-10 h-10 rounded-xl flex items-center justify-center
@@ -171,9 +142,7 @@ function AboutSection(): React.JSX.Element {
                 {block.items.map((item, i) => (
                   <li key={i} className="flex gap-3">
                     <span className="mt-[0.55rem] h-2 w-2 rounded-full bg-[var(--color-primary-neon)]/90 shadow-[0_0_12px_rgba(0,255,200,0.45)]" />
-                    <p className="text-sm leading-relaxed text-[var(--color-text-muted)]">
-                      {item}
-                    </p>
+                    <p className={type.listItemText}>{item}</p>
                   </li>
                 ))}
               </ul>
