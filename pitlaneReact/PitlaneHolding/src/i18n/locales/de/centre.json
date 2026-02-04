@@ -1,0 +1,29 @@
+{
+  "eyebrow": "THE CENTRE",
+  "title": "An integrated complex designed to operate year-round",
+  "subtitle": "The centre is structured around complementary assets that generate activity, demand and visibility across the entire project.",
+  "paragraph1": "Each part is designed to work independently, while reinforcing the others through shared traffic, events and services.",
+  "paragraph2": "This is the foundation for a scalable operation with multiple income lines and controlled execution.",
+  "items": [
+    {
+      "key": "circuit",
+      "title": "Motor Circuit",
+      "text": "Infrastructure for training, competitions and private track experiences."
+    },
+    {
+      "key": "performance",
+      "title": "High Performance",
+      "text": "Facilities for athlete preparation, recovery and specialised programs."
+    },
+    {
+      "key": "events",
+      "title": "Events & Hospitality",
+      "text": "Brand activations, corporate events and premium guest experiences."
+    },
+    {
+      "key": "tech",
+      "title": "Technology Platform",
+      "text": "Digital layer to connect users, operations and investment transparency."
+    }
+  ]
+}

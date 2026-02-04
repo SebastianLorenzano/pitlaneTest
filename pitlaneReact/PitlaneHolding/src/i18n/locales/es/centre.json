@@ -1,0 +1,29 @@
+{
+  "eyebrow": "EL CENTRO",
+  "title": "Un complejo integrado diseñado para operar todo el año",
+  "subtitle": "El centro se estructura en torno a activos complementarios que generan actividad, demanda y visibilidad en todo el proyecto.",
+  "paragraph1": "Cada parte está diseñada para funcionar de forma independiente, reforzándose entre sí mediante tráfico compartido, eventos y servicios.",
+  "paragraph2": "Esta es la base de una operación escalable, con múltiples líneas de ingresos y una ejecución controlada.",
+  "items": [
+    {
+      "key": "circuit",
+      "title": "Circuito de Motor",
+      "text": "Infraestructura para entrenamientos, competiciones y experiencias privadas en pista."
+    },
+    {
+      "key": "performance",
+      "title": "Alto Rendimiento",
+      "text": "Instalaciones para preparación deportiva, recuperación y programas especializados."
+    },
+    {
+      "key": "events",
+      "title": "Eventos y Hospitality",
+      "text": "Activaciones de marca, eventos corporativos y experiencias premium para invitados."
+    },
+    {
+      "key": "tech",
+      "title": "Plataforma Tecnológica",
+      "text": "Capa digital para conectar usuarios, operaciones y transparencia de la inversión."
+    }
+  ]
+}
