@@ -21,7 +21,7 @@ function App() {
       <CircuitSection />
       <AboutSection />
       <ProjectTimelineSection/>
-      <ProjectDetailsSection />
+      {/* <ProjectDetailsSection /> */}
       <CarVideoSection videoSrc={carVideo} />
       <ContactSection />
       <FAQSection/>

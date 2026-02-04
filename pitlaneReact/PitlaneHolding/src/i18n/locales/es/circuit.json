@@ -1,20 +1,20 @@
 {
-  "title": "A new era for motorsport and high performance",
-  "locationLabel": "Location:",
-  "locationValue": "Agost, Alicante",
-  "surfaceLabel": "Surface:",
-  "surfaceValue": "2,200,000 m²",
-  "homologationLabel": "Homologation:",
-  "homologationValue": "FIA Grade 1",
-  "performanceCenter": "High performance center",
-  "zonesLabel": "Zones:",
-  "zonesValue": "Karting, dirt and simulators",
+  "title": "Una nueva era para el motor y el alto rendimiento",
+  "locationLabel": "Ubicación:",
+  "locationValue": "Provincia de Alicante (Comunidad Valenciana)",
+  "surfaceLabel": "Superficie:",
+  "surfaceValue": "2.200.000 m²",
+  "homologationLabel": "Homologación:",
+  "homologationValue": "Licencia Grado 1 FIA",
+  "performanceCenter": "Centro de alto rendimiento",
+  "zonesLabel": "Zonas:",
+  "zonesValue": "Circuito principal, karting, zona de tierra y simuladores",
   "features": {
-    "structure": "Complete Structure",
-    "structureDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Curabitur ac lorem nec sapien volutpat.",
-    "business": "Profitable business model",
-    "businessDesc": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
-    "location": "Strategic Location",
-    "locationDesc": "Integer maximus neque a magna ultricies, eget malesuada lacus vehicula. Sed at tellus id magna cursus posuere."
+    "structure": "Estructura integral",
+    "structureDesc": "PITLANE se concibe como un complejo multifuncional que integra un circuito de velocidad de última generación, un centro de alto rendimiento deportivo, áreas de eventos, hospitalidad y una capa tecnológica propia, diseñado para operar de forma continua durante todo el año.",
+    "business": "Modelo de negocio diversificado",
+    "businessDesc": "El proyecto se apoya en múltiples líneas de ingresos complementarias, incluyendo uso del circuito, eventos deportivos y corporativos, programas de formación y alto rendimiento, hospitality, acuerdos estratégicos y explotación de activos, reduciendo la dependencia de una única fuente.",
+    "location": "Ubicación estratégica",
+    "locationDesc": "La localización en la provincia de Alicante ofrece ventajas climáticas, conectividad nacional e internacional y proximidad a infraestructuras clave."
   }
 }
