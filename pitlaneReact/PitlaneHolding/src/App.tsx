@@ -22,8 +22,8 @@ function App() {
       <AboutSection />
       <ProjectTimelineSection/>
       <ProjectDetailsSection />
-      <ContactSection />
       <CarVideoSection videoSrc={carVideo} />
+      <ContactSection />
       <FAQSection/>
     </>
   )

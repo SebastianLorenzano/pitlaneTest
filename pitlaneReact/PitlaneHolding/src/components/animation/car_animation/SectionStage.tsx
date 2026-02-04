@@ -14,7 +14,7 @@ export default function SectionStage({
   animation_duration = 0.45
 }: SectionStageProps) {
 
-  const { t } = useTranslation()
+  const { t } = useTranslation("download")
 
   return (
     <div
@@ -31,8 +31,8 @@ export default function SectionStage({
       }}
     >
       <SectionBase
-        title={t("download.title")}
-        buttonText={t("download.button")}
+        title={t("title")}
+        buttonText={t("button")}
         buttonLink="/api/files/PitlaneProject.pdf"
       />
     </div>
