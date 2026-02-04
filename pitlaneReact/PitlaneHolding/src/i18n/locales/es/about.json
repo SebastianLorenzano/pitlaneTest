@@ -1,9 +1,55 @@
 {
-    "title": "Quiénes somos",
-    "subtitle": "Un holding profesional que desarrolla un ecosistema real de motor, deporte, eventos y tecnología.",
-    "paragraph1": "PITLANE es un proyecto empresarial real, estructurado como un holding, concebido para desarrollar, operar y escalar un ecosistema que combina infraestructura deportiva y de motor, tecnología digital y explotación de eventos y derechos. No es una idea ni una iniciativa en fase temprana: es un proyecto con planificación avanzada, estructura legal definida y una hoja de ruta clara para ejecutar cada etapa de forma ordenada y medible.",
-    "paragraph2": "El proyecto se articula bajo PITLANE HOLDING, S.L., que concentra la estrategia, la marca y el gobierno corporativo del grupo. Bajo el holding operan sociedades especializadas para cada área de actividad, lo que permite separar riesgos, facilitar coinversiones y habilitar distintas vías de entrada de capital según el perfil del inversor. Esta arquitectura está diseñada para proteger el conjunto del proyecto y preparar su crecimiento a largo plazo.",
-    "paragraph3": "Nuestro objetivo es construir un complejo de referencia que integre un circuito de velocidad de última generación, un centro de alto rendimiento deportivo, una vertical de eventos y hospitality, y una plataforma tecnológica que conecte activos, inversores y comunidad. El modelo no depende de una única fuente de ingresos: está planteado para generar valor mediante activos reales, monetización recurrente y un desarrollo escalable por fases.",
-    "paragraph4": "Para lograrlo, PITLANE se ejecuta mediante una estrategia de inversión escalonada. Cada fase busca generar hitos verificables que reduzcan la incertidumbre y aumenten el valor del activo: desde el aseguramiento del suelo, licencias y proyecto técnico, hasta la construcción del circuito, el desarrollo del centro deportivo, el lanzamiento de eventos y el escalado tecnológico. Este enfoque permite avanzar con control, mantener coherencia estratégica y facilitar la entrada progresiva de capital conforme se alcanzan resultados.",
-    "paragraph5": "El gobierno del proyecto establece una separación clara entre control y retorno: el control estratégico permanece en los fundadores para garantizar continuidad y estabilidad directiva, mientras que los inversores participan mediante derechos económicos definidos y acceso a información periódica. Este marco busca alinear intereses, evitar bloqueos y proteger el valor del proyecto en todas sus fases."
+  "title": "Quiénes somos",
+  "subtitle": "Estructura corporativa, gobierno y ejecución orientada a control, trazabilidad y protección del proyecto.",
+  "intro": "PITLANE se construye desde una base empresarial: con arquitectura legal definida, ejecución por hitos y un marco de control diseñado para proteger el valor del proyecto a largo plazo.",
+
+  "cards": [
+    {
+      "key": "structure",
+      "title": "Holding y estructura por unidades",
+      "text": "El grupo se articula bajo PITLANE HOLDING, S.L. y se organiza en sociedades especializadas por línea de actividad. Este enfoque separa riesgos, permite coinversión por vehículo y facilita la entrada de capital de forma ordenada."
+    },
+    {
+      "key": "governance",
+      "title": "Gobierno y toma de decisiones",
+      "text": "El control estratégico se mantiene en los fundadores para garantizar continuidad, coherencia y velocidad de ejecución. Las decisiones clave se estructuran mediante gobierno corporativo y reglas internas de control."
+    },
+    {
+      "key": "execution",
+      "title": "Ejecución por hitos verificables",
+      "text": "La hoja de ruta se gestiona con objetivos medibles. Cada etapa se valida con entregables concretos que reducen incertidumbre y elevan el valor del proyecto antes de avanzar a la siguiente."
+    }
+  ],
+
+  "lists": [
+    {
+      "key": "protection",
+      "title": "Protección y separación de riesgos",
+      "items": [
+        "Sociedades separadas por unidad para limitar exposición cruzada.",
+        "Marco de control para evitar bloqueos y mantener capacidad operativa.",
+        "Estructura preparada para coinversión y acuerdos estratégicos."
+      ]
+    },
+    {
+      "key": "transparency",
+      "title": "Transparencia para inversores",
+      "items": [
+        "Actualizaciones periódicas del estado del proyecto y sus hitos.",
+        "Comunicación estructurada sobre avances, planificación y ejecución.",
+        "Acceso a documentación y reporting dentro del marco definido."
+      ]
+    },
+    {
+      "key": "economicRights",
+      "title": "Participación económica",
+      "items": [
+        "Los inversores participan mediante derechos económicos definidos.",
+        "No se entrega control de gestión, para preservar estabilidad directiva.",
+        "El objetivo es alinear retorno con ejecución sin interferencias operativas."
+      ]
+    }
+  ],
+
+  "closing": "Este modelo prioriza control, claridad y protección: una base corporativa pensada para ejecutar, escalar y sostener valor en el tiempo."
 }
