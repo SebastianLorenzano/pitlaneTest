@@ -47,9 +47,9 @@ export default function FAQSection(): React.ReactElement {
             <h2 className="text-3xl sm:text-4xl font-semibold">
               {t("title", { ns: "faq" })}
             </h2>
-            <p className="mt-3 text-[var(--color-text-muted)]/70">
+            {/* <p className="mt-3 text-[var(--color-text-muted)]/70">
               {t("subtitle", { ns: "faq" })}
-            </p>
+            </p> */}
           </div>
 
           {/* FAQ Cards */}
