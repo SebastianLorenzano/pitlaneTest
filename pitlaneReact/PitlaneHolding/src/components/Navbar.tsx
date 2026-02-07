@@ -57,7 +57,12 @@ function Navbar(): React.JSX.Element {
               {/* Desktop Menu */}
               <div className="hidden md:flex items-center space-x-4">
 
-                <a href="#project" className="navbar-link text-[var(--color-text-muted)] font-medium text-[1.3rem]">
+                <a href="#centre" className="navbar-link text-[var(--color-text-muted)] font-medium text-[1.3rem]">
+                  {t("centre")}
+                </a>
+                <span className="text-gray-400">|</span>
+
+                <a href="#circuit" className="navbar-link text-[var(--color-text-muted)] font-medium text-[1.3rem]">
                   {t("project")}
                 </a>
                 <span className="text-gray-400">|</span>
