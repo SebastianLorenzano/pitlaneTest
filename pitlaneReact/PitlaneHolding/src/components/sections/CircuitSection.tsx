@@ -23,7 +23,7 @@ function CircuitSection(): React.JSX.Element {
 
   return (
     <section
-      id="project"
+      id="circuit"
       className="
         relative overflow-hidden font-orbitron px-4 py-20 min-h-screen
         flex flex-col justify-center items-center text-center
