@@ -6,7 +6,6 @@ function ProjectDetailsSection(): React.JSX.Element {
   const { t } = useTranslation("projectDetails")
 
   const [visible, setVisible] = useState(false)
-  const [buttonsVisible, setButtonsVisible] = useState(false)
   const sectionRef = useRef<HTMLElement | null>(null)
 
   useEffect(() => {
