@@ -24,7 +24,8 @@ function HeroSection(): React.JSX.Element {
  ]
 
   const indexRef = useRef(0)
-  const timeoutRef = useRef<NodeJS.Timeout>()
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
+
 
   // Smooth scrolling with Lenis
   useEffect(() => {
@@ -69,7 +70,9 @@ function HeroSection(): React.JSX.Element {
 
     typeNext()
 
-    return () => clearTimeout(timeoutRef.current)
+    return () => {
+      if (timeoutRef.current !== null) clearTimeout(timeoutRef.current)
+    }
   }, [fullText]) // re-trigger animation when language changes
 
   return (
