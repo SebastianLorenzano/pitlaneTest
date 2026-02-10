@@ -19,11 +19,6 @@ function ProjectDetailsSection(): React.JSX.Element {
     return () => observer.disconnect()
   }, [])
 
-  useEffect(() => {
-    if (!visible) return
-    const timer = setTimeout(() => setButtonsVisible(true), 200)
-    return () => clearTimeout(timer)
-  }, [visible])
 
   var rawVisionList = t("visionList", { returnObjects: true });
   var visionList: string[] = Array.isArray(rawVisionList) ? (rawVisionList as string[]) : [];
