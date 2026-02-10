@@ -48,7 +48,7 @@ const FormBase: React.FC<FormBaseProps> = ({
   isSubmitting = false,
   isSent = false
 }) => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("contact");
 
   const [formData, setFormData] = useState<Record<string, string>>({});
   const [errors, setErrors] = useState<Record<string, string>>({});
@@ -85,7 +85,7 @@ const FormBase: React.FC<FormBaseProps> = ({
 
       // Phone validation
       if (field.type === "tel" && !isValidPhoneNumber(value)) {
-        newErrors[field.name] = t("contact.validation.invalidNumber");
+        newErrors[field.name] = t("validation.invalidNumber");
       }
     });
 
@@ -114,7 +114,7 @@ const FormBase: React.FC<FormBaseProps> = ({
         </h2>
 
         <p className="text-sm text-[var(--color-text-muted)] mt-2 mb-6 tracking-wide">
-          {t("contact.subtitle")}
+          {t("subtitle")}
         </p>
 
         <form onSubmit={handleSubmit} className="flex flex-col gap-5 items-center">
@@ -195,12 +195,12 @@ const FormBase: React.FC<FormBaseProps> = ({
             {isSubmitting ? (
               <div className="flex items-center justify-center gap-2">
                 <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                {t("contact.button.sending")}
+                {t("button.sending")}
               </div>
             ) : isSent ? (
-              t("contact.button.sent")
+              t("button.sent")
             ) : (
-              t("contact.button.send")
+              t("button.send")
             )}
           </button>
         </form>

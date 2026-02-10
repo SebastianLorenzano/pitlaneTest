@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next"
 import backgroundImage from "../../assets/img/background4.png"
 
 function ProjectDetailsSection(): React.JSX.Element {
-  const { t } = useTranslation()
+  const { t } = useTranslation("projectDetails")
 
   const [visible, setVisible] = useState(false)
   const [buttonsVisible, setButtonsVisible] = useState(false)
@@ -26,7 +26,9 @@ function ProjectDetailsSection(): React.JSX.Element {
     return () => clearTimeout(timer)
   }, [visible])
 
-  const visionList: string[] = t("projectDetails.visionList", { returnObjects: true }) as string[]
+  var rawVisionList = t("visionList", { returnObjects: true });
+  var visionList: string[] = Array.isArray(rawVisionList) ? (rawVisionList as string[]) : [];
+
 
   return (
     <section
@@ -51,19 +53,19 @@ function ProjectDetailsSection(): React.JSX.Element {
           ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}
         `}
       >
-        {/* MAIN INTRO BLOCK */}
+        {/* Main Intro Block */}
         <p className="text-md md:text-lg px-4 mb-8 leading-relaxed">
-          {t("projectDetails.intro1")}
+          {t("intro1")}
         </p>
 
         <p className="text-sm md:text-md px-4 mb-12 leading-relaxed">
-          {t("projectDetails.intro2")}
+          {t("intro2")}
         </p>
 
-        {/* SECTION DIVIDER */}
+        {/* Section Divider */}
         <div className="w-full h-px bg-white/20 my-12" />
 
-        {/* FEATURE BLOCK */}
+        {/* Feature Block */}
         <div
           className={`
             transition-all duration-700 delay-200
@@ -71,18 +73,18 @@ function ProjectDetailsSection(): React.JSX.Element {
           `}
         >
           <h2 className="text-xl md:text-2xl text-cyan-300 mb-6 font-semibold">
-            {t("projectDetails.featuresTitle")}
+            {t("featuresTitle")}
           </h2>
 
           <p className="text-sm md:text-md px-4 mb-10 leading-relaxed">
-            {t("projectDetails.featuresDesc")}
+            {t("featuresDesc")}
           </p>
         </div>
 
-        {/* SECTION DIVIDER */}
+        {/* Section Divider */}
         <div className="w-full h-px bg-white/20 my-12" />
 
-        {/* ARCHITECTURE BLOCK */}
+        {/* Architecture Block */}
         <div
           className={`
             transition-all duration-700 delay-300
@@ -90,18 +92,18 @@ function ProjectDetailsSection(): React.JSX.Element {
           `}
         >
           <h2 className="text-xl md:text-2xl text-cyan-300 mb-6 font-semibold">
-            {t("projectDetails.architectureTitle")}
+            {t("architectureTitle")}
           </h2>
 
           <p className="text-sm md:text-md px-4 mb-10 leading-relaxed">
-            {t("projectDetails.architectureDesc")}
+            {t("architectureDesc")}
           </p>
         </div>
 
-        {/* SECTION DIVIDER */}
+        {/* Section Divider */}
         <div className="w-full h-px bg-white/20 my-12" />
 
-        {/* LIST / BULLET BLOCK */}
+        {/* List / Bullet Block */}
         <div
           className={`
             transition-all duration-700 delay-500
@@ -109,7 +111,7 @@ function ProjectDetailsSection(): React.JSX.Element {
           `}
         >
           <h2 className="text-xl md:text-2xl text-cyan-300 mb-6 font-semibold">
-            {t("projectDetails.visionTitle")}
+            {t("visionTitle")}
           </h2>
 
           <ul className="text-sm md:text-md px-8 text-left mx-auto max-w-3xl space-y-4 leading-relaxed">
@@ -119,7 +121,7 @@ function ProjectDetailsSection(): React.JSX.Element {
           </ul>
         </div>
 
-        {/* EXTRA SPACING */}
+        {/* Extra Spacing */}
         <div className="mt-20" />
       </div>
     </section>

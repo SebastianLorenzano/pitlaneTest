@@ -1,0 +1,56 @@
+{
+  "title": "Preguntas Frecuentes – Marco Legal",
+  "description": "FAQ público orientado a la transparencia y prevención de conflictos.",
+  "items": [
+    {
+      "id": "producto_financiero",
+      "question": "¿Es un producto financiero?",
+      "answer": "No. Es una inversión empresarial privada."
+    },
+    {
+      "id": "cnmv",
+      "question": "¿Está regulado por la CNMV?",
+      "answer": "No. No constituye una oferta pública de valores."
+    },
+    {
+      "id": "rentabilidad",
+      "question": "¿La rentabilidad está garantizada?",
+      "answer": "No. No existen garantías de rentabilidad ni de devolución del capital."
+    },
+    {
+      "id": "riesgo",
+      "question": "¿Puedo perder mi dinero?",
+      "answer": "Sí. Existe riesgo de pérdida total o parcial."
+    },
+    {
+      "id": "liquidez",
+      "question": "¿Puedo retirar la inversión cuando quiera?",
+      "answer": "No. No existe liquidez inmediata ni derecho de rescate."
+    },
+    {
+      "id": "acciones",
+      "question": "¿Recibo acciones o participaciones?",
+      "answer": "No en la inversión desde 100 €. Solo se adquieren derechos económicos."
+    },
+    {
+      "id": "venta",
+      "question": "¿Puedo vender mi inversión?",
+      "answer": "No libremente. No existe mercado secundario."
+    },
+    {
+      "id": "informacion",
+      "question": "¿Cómo se me informa?",
+      "answer": "Mediante comunicaciones generales periódicas."
+    },
+    {
+      "id": "gestion",
+      "question": "¿Quién gestiona el proyecto?",
+      "answer": "El equipo promotor de PITLANE."
+    },
+    {
+      "id": "jurisdiccion",
+      "question": "¿Qué legislación se aplica?",
+      "answer": "La inversión se rige por la legislación española y los tribunales españoles."
+    }
+  ]
+}

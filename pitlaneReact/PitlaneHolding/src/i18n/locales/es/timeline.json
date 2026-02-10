@@ -1,0 +1,31 @@
+{
+  "title": "Hoja de ruta del proyecto",
+  "subtitle": "Explora cada fase para entender cómo PITLANE evoluciona de forma ordenada, validada por hitos y orientada a la creación de activos reales de alto valor.",
+  "stage": "ETAPA",
+  "stages": [
+    {
+      "title": "Estructuración",
+      "contentTitle": "Estructuración y activos base",
+      "contentText": "Definición, aseguramiento y validación de los cimientos legales, técnicos y patrimoniales del proyecto.",
+      "contentDetailedText": "Esta fase constituye la base crítica del proyecto y está orientada a reducir de forma sustancial el riesgo antes de cualquier ejecución constructiva. Incluye el aseguramiento del suelo, la obtención de licencias y viabilidad administrativa, el desarrollo del proyecto técnico y el diseño integral del complejo, así como la estructuración legal, societaria y financiera del grupo. Cada uno de estos elementos se valida mediante entregables concretos y verificables. Al cierre de la fase, PITLANE pasa de ser una oportunidad estructurada a un activo preparado para construir, incrementando de manera significativa su valoración y su atractivo para fases posteriores de inversión."
+    },
+    {
+      "title": "Circuito",
+      "contentTitle": "Construcción del circuito",
+      "contentText": "Ejecución de la infraestructura principal y activación del primer activo operativo del grupo.",
+      "contentDetailedText": "Una vez completada y validada la fase de estructuración, se acomete la construcción del circuito de velocidad y sus infraestructuras asociadas conforme al proyecto técnico aprobado. Esta etapa incluye los procesos de homologación necesarios y la puesta en marcha operativa del activo principal. De forma paralela, se formalizan los primeros acuerdos comerciales, deportivos e institucionales que permiten activar el circuito y comenzar la generación de ingresos. El cierre de esta fase se valida con un activo físico operativo, homologado y capaz de producir actividad económica real."
+    },
+    {
+      "title": "Centro",
+      "contentTitle": "Centro de alto rendimiento y eventos",
+      "contentText": "Diversificación de actividades, consolidación operativa y refuerzo de la marca PITLANE.",
+      "contentDetailedText": "Esta fase amplía el modelo mediante el desarrollo del centro de alto rendimiento deportivo y la estructuración de la línea de eventos y hospitality. Se formalizan acuerdos institucionales, deportivos y estratégicos, y se amplía la base de usuarios y clientes del complejo. La diversificación de ingresos reduce la dependencia de un único activo y aporta mayor estabilidad al conjunto del proyecto. Cada avance se valida mediante la entrada en funcionamiento de nuevas instalaciones y la generación de actividad recurrente, reforzando la marca PITLANE como plataforma integral."
+    },
+    {
+      "title": "Escalabilidad",
+      "contentTitle": "Escalado, tecnología y expansión",
+      "contentText": "Maximización del valor del grupo y proyección a largo plazo.",
+      "contentDetailedText": "La fase final se orienta al escalado del modelo ya validado, apoyándose en la capa tecnológica, el desarrollo de comunidad y los canales digitales de inversión y operación. Incluye la optimización de procesos, la expansión internacional progresiva y la consolidación del grupo como una plataforma replicable y de referencia. Esta etapa no introduce riesgo estructural nuevo, sino que capitaliza los activos, la experiencia operativa y la estructura corporativa construida en fases anteriores, con el objetivo de maximizar el valor global del grupo PITLANE a largo plazo."
+    }
+  ]
+}

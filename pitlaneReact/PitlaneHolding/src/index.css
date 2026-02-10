@@ -86,3 +86,39 @@ body {
     animation: pop-in 0.45s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   }
 }
+
+/* Container below the video */
+.pitlane-pagination-wrap {
+  padding: 12px 16px 16px;
+}
+
+/* The pagination row */
+.pitlane-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Swiper generates bullets with this class:
+   .swiper-pagination-bullet
+   We also add .pitlane-line */
+.pitlane-pagination .swiper-pagination-bullet.pitlane-line {
+  width: 34px;
+  height: 3px;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.25);
+  opacity: 1; /* Swiper may set opacity otherwise */
+  cursor: pointer;
+  transition: transform 200ms ease, background 200ms ease, box-shadow 200ms ease;
+}
+
+.pitlane-pagination .swiper-pagination-bullet.pitlane-line:hover {
+  transform: scaleX(1.06);
+}
+
+.pitlane-pagination .swiper-pagination-bullet-active.pitlane-line {
+  background: var(--color-primary-neon);
+  box-shadow: 0 0 18px rgba(0, 255, 255, 0.35);
+  transform: scaleX(1.15);
+}

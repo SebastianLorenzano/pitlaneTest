@@ -6,7 +6,7 @@ import { sendContactForm } from "../../api/apiContact";
 import Modal from "./Modal";
 
 const ContactForm: React.FC = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation("contact");
 
   const [modalOpen, setModalOpen] = useState(false);
   const [modalType, setModalType] = useState<"success" | "error" | "warning">("success");
@@ -19,36 +19,36 @@ const ContactForm: React.FC = () => {
   const fields: Field[] = [
       {
         name: "name",
-        label: t("contact.fields.name"),
+        label: t("fields.name"),
         type: "text",
         required: true,
-        placeholder: t("contact.placeholders.name")
+        placeholder: t("placeholders.name")
       },
       {
         name: "email",
-        label: t("contact.fields.email"),
+        label: t("fields.email"),
         type: "email",
         required: true,
-        placeholder: t("contact.placeholders.email")
+        placeholder: t("placeholders.email")
       },
       {
         name: "number",
-        label: t("contact.fields.number"),
+        label: t("fields.number"),
         type: "tel",
-        placeholder: t("contact.placeholders.number")
+        placeholder: t("placeholders.number")
       },
       {
         name: "company",
-        label: t("contact.fields.company"),
+        label: t("fields.company"),
         type: "text",
-        placeholder: t("contact.placeholders.company")
+        placeholder: t("placeholders.company")
       },
       {
         name: "message",
-        label: t("contact.fields.message"),
+        label: t("fields.message"),
         type: "textarea",
         rows: 5,
-        placeholder: t("contact.placeholders.message")
+        placeholder: t("placeholders.message")
       }
     ];
 
@@ -64,8 +64,8 @@ const ContactForm: React.FC = () => {
         setIsSent(true);
         setIsSubmitting(false);
         setModalType("success");
-        setModalTitle(t("contact.modal.successTitle"));
-        setModalMessage(t("contact.modal.successMessage"));
+        setModalTitle(t("modal.successTitle"));
+        setModalMessage(t("modal.successMessage"));
         setModalOpen(true);
         return;
       }
@@ -73,8 +73,8 @@ const ContactForm: React.FC = () => {
       // Backend responded but failed
       setIsSubmitting(false);
       setModalType("error");
-      setModalTitle(t("contact.modal.errorTitle"));
-      setModalMessage(result.message || t("contact.modal.errorMessage"));
+      setModalTitle(t("modal.errorTitle"));
+      setModalMessage(result.message || t("modal.errorMessage"));
       setModalOpen(true);
 
     } catch (err: any) {
@@ -83,12 +83,12 @@ const ContactForm: React.FC = () => {
       if (err.errors) {
         setModalErrors(err.errors);
         setModalType("warning");
-        setModalTitle(t("contact.modal.validationTitle"));
-        setModalMessage(t("contact.modal.validationMessage"));
+        setModalTitle(t("modal.validationTitle"));
+        setModalMessage(t("modal.validationMessage"));
       } else {
         setModalType("error");
-        setModalTitle(t("contact.modal.unexpectedTitle"));
-        setModalMessage(t("contact.modal.unexpectedMessage"));
+        setModalTitle(t("modal.unexpectedTitle"));
+        setModalMessage(t("modal.unexpectedMessage"));
       }
 
       setModalOpen(true);
@@ -100,7 +100,7 @@ const ContactForm: React.FC = () => {
       <div className="w-full flex flex-col items-center justify-center">
         <div className="w-full max-w-xl">
           <FormBase
-            title={t("contact.title")}
+            title={t("title")}
             fields={fields}
             onSubmit={handleSubmit}
             disabled={isSubmitting || isSent}

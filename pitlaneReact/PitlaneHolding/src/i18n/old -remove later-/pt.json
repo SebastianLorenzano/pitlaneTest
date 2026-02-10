@@ -1,0 +1,113 @@
+{
+  "navbar": {
+    "project": "Projeto",
+    "about": "Sobre nós",
+    "contact": "Contato",
+    "download": "Baixar projeto"
+  },
+
+  "hero": {
+    "slogan": "Investimento com uma visão para o futuro",
+    "about": "Sobre nós",
+    "contact": "Entre em contato"
+  },
+
+  "circuit": {
+    "title": "Uma nova era para o automobilismo e alto desempenho",
+    "locationLabel": "Localização:",
+    "locationValue": "Agost, Alicante",
+
+    "surfaceLabel": "Área:",
+    "surfaceValue": "2.200.000 m²",
+
+    "homologationLabel": "Homologação:",
+    "homologationValue": "FIA Grau 1",
+
+    "performanceCenter": "Centro de alto desempenho",
+
+    "zonesLabel": "Zonas:",
+    "zonesValue": "Kart, terra e simuladores",
+
+    "features": {
+      "structure": "Estrutura completa",
+      "structureDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Curabitur ac lorem nec sapien volutpat.",
+
+      "business": "Modelo de negócio rentável",
+      "businessDesc": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+
+      "location": "Localização estratégica",
+      "locationDesc": "Integer maximus neque a magna ultricies, eget malesuada lacus vehicula. Sed at tellus id magna cursus posuere."
+    }
+  },
+
+  "projectDetails": {
+    "intro1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id tempus tortor. Fusce aliquet dictum eros id malesuada. Mauris at consequat ipsum. Donec consequat risus ac est viverra convallis. Proin iaculis sed lorem in luctus. Praesent vitae sem sed libero scelerisque laoreet sit amet a mauris.",
+    "intro2": "Donec blandit dignissim lacus, sed dapibus libero fringilla in. Sed at tempor sem. Mauris auctor euismod sapien, feugiat gravida lectus porta sed. Nulla vitae leo fringilla, semper mauris id, suscipit elit.",
+
+    "featuresTitle": "Principais características do projeto",
+    "featuresDesc": "Suspendisse potenti. Nunc ultricies mauris id augue condimentum, ac vehicula ex rutrum. Integer convallis aliquam velit, id congue neque dignissim ac. Fusce nec justo vitae lacus tempus auctor a id nisi.",
+
+    "architectureTitle": "Como o sistema funciona",
+    "architectureDesc": "Sed euismod lectus vitae urna congue, id feugiat leo ullamcorper. Donec luctus tincidunt metus nec consequat. Morbi vitae dui vehicula, ultricies purus et, tempor tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+
+    "visionTitle": "Visão & Objetivos",
+    "visionList": [
+      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
+      "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+    ]
+  },
+
+  "about": {
+    "paragraph1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed aliquet felis. Fusce vestibulum felis blandit convallis maximus. In laoreet, augue vitae tempor tristique, quam justo euismod nibh, a mattis mi eros sed augue. Cras felis urna, posuere eu aliquet in, venenatis feugiat justo. In eget sodales mauris, quis tristique tellus. In et sapien et tellus faucibus consequat sit amet sit amet elit.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed aliquet felis. Fusce vestibulum felis blandit convallis maximus. In laoreet, augue vitae tempor tristique, quam justo euismod nibh, a mattis mi eros sed augue. Cras felis urna, posuere eu aliquet in, venenatis feugiat justo. In eget sodales mauris, quis tristique tellus. In et sapien et tellus faucibus consequat sit amet sit amet elit.",
+
+    "paragraph2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed aliquet felis. Fusce vestibulum felis blandit convallis maximus. In laoreet, augue vitae tempor tristique, quam justo euismod nibh, a mattis mi eros sed augue. Cras felis urna, posuere eu aliquet in, venenatis feugiat justo. In eget sodales mauris, quis tristique tellus. In et sapien et tellus faucibus consequat sit amet sit amet elit.",
+
+    "contact": "Entre em contato",
+    "download": "Baixar projeto"
+  },
+
+  "contact": {
+    "title": "Interessado em investir?",
+    "subtitle": "Preencha o formulário abaixo e entraremos em contato o mais breve possível.",
+    "placeholders": {
+        "name": "Insira o seu nome completo",
+        "email": "Insira o seu endereço de e-mail",
+        "number": "(+351) 912 345 678",
+        "company": "Insira o nome da sua empresa ou fundo de investimento",
+        "message": "Escreva a sua mensagem aqui"
+      },
+    "button": {
+      "send": "Enviar",
+      "sending": "Enviando...",
+      "sent": "✔ Enviado!"
+    },
+    "fields": {
+      "name": "Nome completo",
+      "email": "Endereço de e-mail",
+      "number": "Número de telefone",
+      "company": "Empresa / Fundo de investimento",
+      "message": "Mensagem"
+    },
+    "validation": {
+      "invalidNumber": "Por favor, insira um número de telefone válido"
+    },
+    "modal": {
+      "successTitle": "Formulário enviado!",
+      "successMessage": "Sua mensagem foi enviada com sucesso.",
+      "errorTitle": "Erro",
+      "errorMessage": "Não foi possível enviar.",
+      "validationTitle": "Corrija os campos",
+      "validationMessage": "Alguns campos contêm erros.",
+      "unexpectedTitle": "Erro inesperado",
+      "unexpectedMessage": "O formulário não pôde ser enviado."
+    }
+  },
+
+  "download": {
+    "title": "Baixar o plano completo do projeto",
+    "button": "Baixar projeto"
+  }
+}

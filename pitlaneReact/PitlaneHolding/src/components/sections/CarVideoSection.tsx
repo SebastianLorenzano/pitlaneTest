@@ -21,12 +21,11 @@ export default function CarVideoSection({ videoSrc }: CarVideoSectionProps) {
         const entry = entries[0];
 
         if (entry.isIntersecting) {
-          // 🔄 Reinicia todo cuando el usuario entra a la sección
           video.currentTime = 0;
           setEnded(false);
           video.play();
         } else {
-          // ⏸️ Pausa cuando deja de verse
+          //  Pausa cuando deja de verse
           video.pause();
         }
       },
@@ -37,7 +36,7 @@ export default function CarVideoSection({ videoSrc }: CarVideoSectionProps) {
     return () => observer.disconnect();
   }, []);
 
-  // 📌 Detecta cuando el video termina
+  // Detecta cuando el video termina
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
@@ -57,13 +56,13 @@ export default function CarVideoSection({ videoSrc }: CarVideoSectionProps) {
     }}
   >
 
-    {/* 🔵 Capa azul translúcida — AHORA ENCIMA DEL VIDEO */}
+    {/*  Capa azul translúcida — AHORA ENCIMA DEL VIDEO */}
     <div
       className="absolute inset-0 z-[4] pointer-events-none"
       style={{ backgroundColor: "rgba(13,44,83,0.4)" }}
     />
 
-    {/* 🎥 VIDEO */}
+    {/*  VIDEO */}
     <video
       ref={videoRef}
       src={videoSrc}

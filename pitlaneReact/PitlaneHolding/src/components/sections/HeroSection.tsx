@@ -3,15 +3,25 @@ import { useTranslation } from "react-i18next"
 import logo from "../../assets/img/logo_noBG.png"
 import backgroundImage from "../../assets/img/background1.png"
 import Lenis from "@studio-freight/lenis"
+import YouTubeCarousel from "../YoutubeCarousel"
+
+
+
 
 function HeroSection(): React.JSX.Element {
-  const { t } = useTranslation()
+  const { t } = useTranslation("hero")
 
   // The full text now comes from translations
-  const fullText = t("hero.slogan")
+  const fullText = t("slogan")
 
   const [displayedText, setDisplayedText] = useState("")
   const [buttonsVisible, setButtonsVisible] = useState(false)
+
+  const youtubeVideos = [
+  { id: "yt1", youtubeId: "1GpGbTXmQu8" },
+  { id: "yt2", youtubeId: "UYh8ATF8L0c" },
+  { id: "yt3", youtubeId: "k0Pmj2wxNXw" }
+ ]
 
   const indexRef = useRef(0)
   const timeoutRef = useRef<NodeJS.Timeout>()
@@ -60,7 +70,7 @@ function HeroSection(): React.JSX.Element {
     typeNext()
 
     return () => clearTimeout(timeoutRef.current)
-  }, [fullText]) // important: re-trigger animation when language changes
+  }, [fullText]) // re-trigger animation when language changes
 
   return (
     <main
@@ -84,7 +94,8 @@ function HeroSection(): React.JSX.Element {
           alt="Logo"
         />
 
-        <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl whitespace-normal leading-tight">
+        <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl whitespace-normal leading-tight
+         text-[var(--color-text)]">
           {displayedText}
         </h1>
 
@@ -101,7 +112,7 @@ function HeroSection(): React.JSX.Element {
                       font-semibold shadow-lg hover:bg-[var(--color-primary-neon)] hover:text-[var(--color-primary)] 
                       hover:scale-105 transition-all duration-300"
           >
-            {t("hero.about")}
+            {t("about")}
           </a>
 
           <a
@@ -109,9 +120,12 @@ function HeroSection(): React.JSX.Element {
             className="px-6 py-3 rounded-lg bg-[var(--color-primary-neon)] text-[var(--color-primary)] font-semibold 
                       shadow-lg hover:scale-105 transition-all duration-300"
           >
-            {t("hero.contact")}
+            {t("contact")}
           </a>
         </div>
+        <YouTubeCarousel items={youtubeVideos} />
+
+
       </div>
     </main>
   )
