@@ -1,6 +1,55 @@
 {
-  "paragraph1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed aliquet felis. Fusce vestibulum felis blandit convallis maximus. In laoreet, augue vitae tempor tristique, quam justo euismod nibh, a mattis mi eros sed augue. Cras felis urna, posuere eu aliquet in, venenatis feugiat justo. In eget sodales mauris, quis tristique tellus. In et sapien et tellus faucibus consequat sit amet sit amet elit.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed aliquet felis. Fusce vestibulum felis blandit convallis maximus. In laoreet, augue vitae tempor tristique, quam justo euismod nibh, a mattis mi eros sed augue. Cras felis urna, posuere eu aliquet in, venenatis feugiat justo. In eget sodales mauris, quis tristique tellus. In et sapien et tellus faucibus consequat sit amet sit amet elit.",
-  "paragraph2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed aliquet felis. Fusce vestibulum felis blandit convallis maximus. In laoreet, augue vitae tempor tristique, quam justo euismod nibh, a mattis mi eros sed augue. Cras felis urna, posuere eu aliquet in, venenatis feugiat justo. In eget sodales mauris, quis tristique tellus. In et sapien et tellus faucibus consequat sit amet sit amet elit.",
-  "contact": "Contact Us",
-  "download": "Download Project"
+  "title": "Wer wir sind",
+  "subtitle": "Unternehmensstruktur, Governance und Umsetzung mit Fokus auf Kontrolle, Nachvollziehbarkeit und Projektschutz.",
+  "intro": "PITLANE basiert auf einer unternehmerischen Grundlage: mit klar definierter rechtlicher Struktur, umsetzungsorientierten Meilensteinen und einem Kontrollrahmen zum Schutz des langfristigen Projektwerts.",
+
+  "cards": [
+    {
+      "key": "structure",
+      "title": "Holding- und Einheitenstruktur",
+      "text": "Die Gruppe ist unter PLN Global Assets, S.L organisiert und in spezialisierte Gesellschaften nach Geschäftsbereichen gegliedert. Dieser Ansatz trennt Risiken, ermöglicht Co-Investitionen und erleichtert einen geordneten Kapitalzugang."
+    },
+    {
+      "key": "governance",
+      "title": "Governance und Entscheidungsfindung",
+      "text": "Die strategische Kontrolle verbleibt bei den Gründern, um Kontinuität, Kohärenz und Umsetzungsgeschwindigkeit sicherzustellen. Zentrale Entscheidungen erfolgen im Rahmen von Corporate Governance und internen Kontrollregeln."
+    },
+    {
+      "key": "execution",
+      "title": "Umsetzung durch überprüfbare Meilensteine",
+      "text": "Die Roadmap wird anhand messbarer Ziele gesteuert. Jede Phase wird durch konkrete Ergebnisse validiert, wodurch Unsicherheiten reduziert und der Projektwert gesteigert werden."
+    }
+  ],
+
+  "lists": [
+    {
+      "key": "protection",
+      "title": "Schutz und Risikotrennung",
+      "items": [
+        "Getrennte Gesellschaften pro Einheit zur Begrenzung von Risiken.",
+        "Kontrollrahmen zur Vermeidung von Blockaden und Sicherstellung der Handlungsfähigkeit.",
+        "Struktur für Co-Investitionen und strategische Partnerschaften vorbereitet."
+      ]
+    },
+    {
+      "key": "transparency",
+      "title": "Transparenz für Investoren",
+      "items": [
+        "Regelmäßige Updates zum Projektstatus und zu Meilensteinen.",
+        "Strukturierte Kommunikation zu Fortschritt, Planung und Umsetzung.",
+        "Zugang zu Dokumentation und Reporting im definierten Rahmen."
+      ]
+    },
+    {
+      "key": "economicRights",
+      "title": "Wirtschaftliche Beteiligung",
+      "items": [
+        "Investoren nehmen über definierte wirtschaftliche Rechte teil.",
+        "Keine Übertragung von Managementkontrolle zur Wahrung der Stabilität.",
+        "Ziel ist die Ausrichtung der Rendite an der Umsetzung ohne operative Eingriffe."
+      ]
+    }
+  ],
+
+  "closing": "Dieses Modell priorisiert Kontrolle, Klarheit und Schutz: eine Unternehmensbasis für nachhaltige Wertschöpfung."
 }

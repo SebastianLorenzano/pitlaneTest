@@ -1,6 +1,55 @@
 {
-  "paragraph1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed aliquet felis. Fusce vestibulum felis blandit convallis maximus. In laoreet, augue vitae tempor tristique, quam justo euismod nibh, a mattis mi eros sed augue. Cras felis urna, posuere eu aliquet in, venenatis feugiat justo. In eget sodales mauris, quis tristique tellus. In et sapien et tellus faucibus consequat sit amet sit amet elit.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed aliquet felis. Fusce vestibulum felis blandit convallis maximus. In laoreet, augue vitae tempor tristique, quam justo euismod nibh, a mattis mi eros sed augue. Cras felis urna, posuere eu aliquet in, venenatis feugiat justo. In eget sodales mauris, quis tristique tellus. In et sapien et tellus faucibus consequat sit amet sit amet elit.",
-  "paragraph2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed aliquet felis. Fusce vestibulum felis blandit convallis maximus. In laoreet, augue vitae tempor tristique, quam justo euismod nibh, a mattis mi eros sed augue. Cras felis urna, posuere eu aliquet in, venenatis feugiat justo. In eget sodales mauris, quis tristique tellus. In et sapien et tellus faucibus consequat sit amet sit amet elit.",
-  "contact": "Contact Us",
-  "download": "Download Project"
+  "title": "Chi siamo",
+  "subtitle": "Struttura societaria, governance ed esecuzione orientate a controllo, tracciabilità e protezione del progetto.",
+  "intro": "PITLANE nasce su una base imprenditoriale: con un’architettura legale definita, esecuzione per milestone e un sistema di controllo pensato per proteggere il valore nel lungo periodo.",
+
+  "cards": [
+    {
+      "key": "structure",
+      "title": "Holding e struttura per unità",
+      "text": "Il gruppo è organizzato sotto PLN Global Assets, S.L e suddiviso in società specializzate per area. Questo approccio separa i rischi e facilita l’ingresso di capitali."
+    },
+    {
+      "key": "governance",
+      "title": "Governance e decisioni",
+      "text": "Il controllo strategico resta ai fondatori per garantire continuità e velocità. Le decisioni chiave seguono regole di governance definite."
+    },
+    {
+      "key": "execution",
+      "title": "Esecuzione per milestone verificabili",
+      "text": "La roadmap si basa su obiettivi misurabili. Ogni fase è validata con risultati concreti."
+    }
+  ],
+
+  "lists": [
+    {
+      "key": "protection",
+      "title": "Protezione e separazione dei rischi",
+      "items": [
+        "Società separate per limitare i rischi.",
+        "Sistema di controllo per evitare blocchi.",
+        "Struttura pronta per coinvestimenti."
+      ]
+    },
+    {
+      "key": "transparency",
+      "title": "Trasparenza per gli investitori",
+      "items": [
+        "Aggiornamenti periodici.",
+        "Comunicazione strutturata.",
+        "Accesso alla documentazione."
+      ]
+    },
+    {
+      "key": "economicRights",
+      "title": "Partecipazione economica",
+      "items": [
+        "Diritti economici definiti.",
+        "Nessun controllo gestionale.",
+        "Allineamento tra rendimento ed esecuzione."
+      ]
+    }
+  ],
+
+  "closing": "Un modello basato su controllo, chiarezza e protezione per creare valore nel tempo."
 }

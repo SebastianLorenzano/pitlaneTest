@@ -1,6 +1,55 @@
 {
-  "paragraph1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed aliquet felis. Fusce vestibulum felis blandit convallis maximus. In laoreet, augue vitae tempor tristique, quam justo euismod nibh, a mattis mi eros sed augue. Cras felis urna, posuere eu aliquet in, venenatis feugiat justo. In eget sodales mauris, quis tristique tellus. In et sapien et tellus faucibus consequat sit amet sit amet elit.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed aliquet felis. Fusce vestibulum felis blandit convallis maximus. In laoreet, augue vitae tempor tristique, quam justo euismod nibh, a mattis mi eros sed augue. Cras felis urna, posuere eu aliquet in, venenatis feugiat justo. In eget sodales mauris, quis tristique tellus. In et sapien et tellus faucibus consequat sit amet sit amet elit.",
-  "paragraph2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed aliquet felis. Fusce vestibulum felis blandit convallis maximus. In laoreet, augue vitae tempor tristique, quam justo euismod nibh, a mattis mi eros sed augue. Cras felis urna, posuere eu aliquet in, venenatis feugiat justo. In eget sodales mauris, quis tristique tellus. In et sapien et tellus faucibus consequat sit amet sit amet elit.",
-  "contact": "Contact Us",
-  "download": "Download Project"
+  "title": "Qui sommes-nous",
+  "subtitle": "Structure corporative, gouvernance et exécution orientées vers le contrôle, la traçabilité et la protection du projet.",
+  "intro": "PITLANE repose sur une base entrepreneuriale : une architecture juridique définie, une exécution par étapes et un cadre de contrôle conçu pour protéger la valeur du projet à long terme.",
+
+  "cards": [
+    {
+      "key": "structure",
+      "title": "Holding et structure par unités",
+      "text": "Le groupe est structuré sous PLN Global Assets, S.L et organisé en sociétés spécialisées par activité. Cette approche sépare les risques, permet la co-investissement et facilite l’entrée de capital."
+    },
+    {
+      "key": "governance",
+      "title": "Gouvernance et prise de décision",
+      "text": "Le contrôle stratégique reste entre les mains des fondateurs afin d’assurer continuité, cohérence et rapidité d’exécution. Les décisions clés sont encadrées par des règles de gouvernance."
+    },
+    {
+      "key": "execution",
+      "title": "Exécution par étapes vérifiables",
+      "text": "La feuille de route repose sur des objectifs mesurables. Chaque étape est validée par des livrables concrets réduisant l’incertitude et augmentant la valeur du projet."
+    }
+  ],
+
+  "lists": [
+    {
+      "key": "protection",
+      "title": "Protection et séparation des risques",
+      "items": [
+        "Sociétés distinctes pour limiter les risques croisés.",
+        "Cadre de contrôle pour éviter les blocages.",
+        "Structure adaptée à la co-investissement."
+      ]
+    },
+    {
+      "key": "transparency",
+      "title": "Transparence pour les investisseurs",
+      "items": [
+        "Mises à jour régulières sur le projet.",
+        "Communication structurée sur les avancées.",
+        "Accès à la documentation et aux rapports."
+      ]
+    },
+    {
+      "key": "economicRights",
+      "title": "Participation économique",
+      "items": [
+        "Participation via des droits économiques définis.",
+        "Pas de transfert du contrôle de gestion.",
+        "Alignement entre rendement et exécution."
+      ]
+    }
+  ],
+
+  "closing": "Ce modèle privilégie contrôle, clarté et protection : une base solide pour créer de la valeur durable."
 }

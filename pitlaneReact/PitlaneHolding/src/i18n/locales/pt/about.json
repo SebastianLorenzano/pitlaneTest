@@ -1,6 +1,55 @@
 {
-  "paragraph1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed aliquet felis. Fusce vestibulum felis blandit convallis maximus. In laoreet, augue vitae tempor tristique, quam justo euismod nibh, a mattis mi eros sed augue. Cras felis urna, posuere eu aliquet in, venenatis feugiat justo. In eget sodales mauris, quis tristique tellus. In et sapien et tellus faucibus consequat sit amet sit amet elit.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed aliquet felis. Fusce vestibulum felis blandit convallis maximus. In laoreet, augue vitae tempor tristique, quam justo euismod nibh, a mattis mi eros sed augue. Cras felis urna, posuere eu aliquet in, venenatis feugiat justo. In eget sodales mauris, quis tristique tellus. In et sapien et tellus faucibus consequat sit amet sit amet elit.",
-  "paragraph2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed aliquet felis. Fusce vestibulum felis blandit convallis maximus. In laoreet, augue vitae tempor tristique, quam justo euismod nibh, a mattis mi eros sed augue. Cras felis urna, posuere eu aliquet in, venenatis feugiat justo. In eget sodales mauris, quis tristique tellus. In et sapien et tellus faucibus consequat sit amet sit amet elit.",
-  "contact": "Contact Us",
-  "download": "Download Project"
+  "title": "Quem somos",
+  "subtitle": "Estrutura corporativa, governança e execução orientadas a controle, rastreabilidade e proteção do projeto.",
+  "intro": "A PITLANE é construída sobre uma base empresarial: com arquitetura legal definida, execução por marcos e um sistema de controle projetado para proteger o valor a longo prazo.",
+
+  "cards": [
+    {
+      "key": "structure",
+      "title": "Holding e estrutura por unidades",
+      "text": "O grupo está estruturado sob a PLN Global Assets, S.L e organizado em empresas especializadas por área. Isso separa riscos e facilita a entrada de capital."
+    },
+    {
+      "key": "governance",
+      "title": "Governança e decisões",
+      "text": "O controle estratégico permanece com os fundadores para garantir continuidade e coerência. As decisões seguem regras de governança."
+    },
+    {
+      "key": "execution",
+      "title": "Execução por marcos verificáveis",
+      "text": "A execução é baseada em objetivos mensuráveis. Cada etapa é validada com resultados concretos."
+    }
+  ],
+
+  "lists": [
+    {
+      "key": "protection",
+      "title": "Proteção e separação de riscos",
+      "items": [
+        "Empresas separadas para limitar riscos.",
+        "Sistema de controle para evitar bloqueios.",
+        "Estrutura preparada para coinvestimento."
+      ]
+    },
+    {
+      "key": "transparency",
+      "title": "Transparência para investidores",
+      "items": [
+        "Atualizações periódicas.",
+        "Comunicação estruturada.",
+        "Acesso a documentação."
+      ]
+    },
+    {
+      "key": "economicRights",
+      "title": "Participação econômica",
+      "items": [
+        "Direitos econômicos definidos.",
+        "Sem controle de gestão.",
+        "Alinhamento entre retorno e execução."
+      ]
+    }
+  ],
+
+  "closing": "Um modelo que prioriza controle, clareza e proteção para sustentar valor no longo prazo."
 }

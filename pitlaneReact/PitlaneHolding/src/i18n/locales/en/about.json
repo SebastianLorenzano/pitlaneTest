@@ -1,6 +1,55 @@
 {
-  "paragraph1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed aliquet felis. Fusce vestibulum felis blandit convallis maximus. In laoreet, augue vitae tempor tristique, quam justo euismod nibh, a mattis mi eros sed augue. Cras felis urna, posuere eu aliquet in, venenatis feugiat justo. In eget sodales mauris, quis tristique tellus. In et sapien et tellus faucibus consequat sit amet sit amet elit.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed aliquet felis. Fusce vestibulum felis blandit convallis maximus. In laoreet, augue vitae tempor tristique, quam justo euismod nibh, a mattis mi eros sed augue. Cras felis urna, posuere eu aliquet in, venenatis feugiat justo. In eget sodales mauris, quis tristique tellus. In et sapien et tellus faucibus consequat sit amet sit amet elit.",
-  "paragraph2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sed aliquet felis. Fusce vestibulum felis blandit convallis maximus. In laoreet, augue vitae tempor tristique, quam justo euismod nibh, a mattis mi eros sed augue. Cras felis urna, posuere eu aliquet in, venenatis feugiat justo. In eget sodales mauris, quis tristique tellus. In et sapien et tellus faucibus consequat sit amet sit amet elit.",
-  "contact": "Contact Us",
-  "download": "Download Project"
+  "title": "Who we are",
+  "subtitle": "Corporate structure, governance and execution focused on control, traceability and project protection.",
+  "intro": "PITLANE is built on a business foundation: with a defined legal architecture, milestone-based execution and a control framework designed to protect the long-term value of the project.",
+
+  "cards": [
+    {
+      "key": "structure",
+      "title": "Holding and unit-based structure",
+      "text": "The group is structured under PLN Global Assets, S.L and organized into specialized companies by activity line. This approach separates risks, enables co-investment by vehicle and facilitates orderly capital entry."
+    },
+    {
+      "key": "governance",
+      "title": "Governance and decision-making",
+      "text": "Strategic control remains with the founders to ensure continuity, coherence and execution speed. Key decisions are structured through corporate governance and internal control rules."
+    },
+    {
+      "key": "execution",
+      "title": "Execution through verifiable milestones",
+      "text": "The roadmap is managed through measurable objectives. Each stage is validated with concrete deliverables that reduce uncertainty and increase project value before moving forward."
+    }
+  ],
+
+  "lists": [
+    {
+      "key": "protection",
+      "title": "Protection and risk separation",
+      "items": [
+        "Separate entities per unit to limit cross-exposure.",
+        "Control framework to prevent deadlocks and maintain operational capacity.",
+        "Structure prepared for co-investment and strategic agreements."
+      ]
+    },
+    {
+      "key": "transparency",
+      "title": "Investor transparency",
+      "items": [
+        "Periodic updates on project status and milestones.",
+        "Structured communication on progress, planning and execution.",
+        "Access to documentation and reporting within the defined framework."
+      ]
+    },
+    {
+      "key": "economicRights",
+      "title": "Economic participation",
+      "items": [
+        "Investors participate through defined economic rights.",
+        "Management control is not transferred, preserving leadership stability.",
+        "The goal is to align returns with execution without operational interference."
+      ]
+    }
+  ],
+
+  "closing": "This model prioritizes control, clarity and protection: a corporate foundation designed to execute, scale and sustain value over time."
 }
