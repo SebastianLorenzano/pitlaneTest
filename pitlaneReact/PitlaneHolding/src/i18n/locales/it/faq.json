@@ -1,56 +1,56 @@
 {
-  "title": "Preguntas Frecuentes – Marco Legal",
-  "description": "FAQ público orientado a la transparencia y prevención de conflictos.",
+  "title": "Domande frequenti",
+  "description": "FAQ pubblica orientata alla trasparenza e alla prevenzione dei conflitti.",
   "items": [
     {
       "id": "producto_financiero",
-      "question": "¿Es un producto financiero?",
-      "answer": "No. Es una inversión empresarial privada."
+      "question": "Si tratta di un prodotto finanziario?",
+      "answer": "No. È un investimento imprenditoriale privato."
     },
     {
       "id": "cnmv",
-      "question": "¿Está regulado por la CNMV?",
-      "answer": "No. No constituye una oferta pública de valores."
+      "question": "È regolato dalla CNMV?",
+      "answer": "No. Non costituisce un’offerta pubblica di titoli."
     },
     {
       "id": "rentabilidad",
-      "question": "¿La rentabilidad está garantizada?",
-      "answer": "No. No existen garantías de rentabilidad ni de devolución del capital."
+      "question": "La redditività è garantita?",
+      "answer": "No. Non esistono garanzie di rendimento né di restituzione del capitale."
     },
     {
       "id": "riesgo",
-      "question": "¿Puedo perder mi dinero?",
-      "answer": "Sí. Existe riesgo de pérdida total o parcial."
+      "question": "Posso perdere il mio denaro?",
+      "answer": "Sì. Esiste il rischio di perdita totale o parziale."
     },
     {
       "id": "liquidez",
-      "question": "¿Puedo retirar la inversión cuando quiera?",
-      "answer": "No. No existe liquidez inmediata ni derecho de rescate."
+      "question": "Posso ritirare l’investimento in qualsiasi momento?",
+      "answer": "No. Non esiste liquidità immediata né diritto di rimborso."
     },
     {
       "id": "acciones",
-      "question": "¿Recibo acciones o participaciones?",
-      "answer": "No en la inversión desde 100 €. Solo se adquieren derechos económicos."
+      "question": "Ricevo azioni o quote societarie?",
+      "answer": "Non per investimenti da 100 €. Si acquisiscono solo diritti economici."
     },
     {
       "id": "venta",
-      "question": "¿Puedo vender mi inversión?",
-      "answer": "No libremente. No existe mercado secundario."
+      "question": "Posso vendere il mio investimento?",
+      "answer": "Non liberamente. Non esiste un mercato secondario."
     },
     {
       "id": "informacion",
-      "question": "¿Cómo se me informa?",
-      "answer": "Mediante comunicaciones generales periódicas."
+      "question": "Come ricevo informazioni?",
+      "answer": "Attraverso comunicazioni periodiche generali."
     },
     {
       "id": "gestion",
-      "question": "¿Quién gestiona el proyecto?",
-      "answer": "El equipo promotor de PITLANE."
+      "question": "Chi gestisce il progetto?",
+      "answer": "Il team promotore di PITLANE."
     },
     {
       "id": "jurisdiccion",
-      "question": "¿Qué legislación se aplica?",
-      "answer": "La inversión se rige por la legislación española y los tribunales españoles."
+      "question": "Quale legge si applica?",
+      "answer": "L’investimento è regolato dalla legge spagnola e dai tribunali spagnoli."
     }
   ]
 }

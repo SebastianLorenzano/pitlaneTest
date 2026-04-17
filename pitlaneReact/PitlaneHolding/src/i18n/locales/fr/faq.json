@@ -1,56 +1,56 @@
 {
-  "title": "Preguntas Frecuentes – Marco Legal",
-  "description": "FAQ público orientado a la transparencia y prevención de conflictos.",
+  "title": "Questions fréquentes",
+  "description": "FAQ publique orientée vers la transparence et la prévention des conflits.",
   "items": [
     {
       "id": "producto_financiero",
-      "question": "¿Es un producto financiero?",
-      "answer": "No. Es una inversión empresarial privada."
+      "question": "S’agit-il d’un produit financier ?",
+      "answer": "Non. Il s’agit d’un investissement entrepreneurial privé."
     },
     {
       "id": "cnmv",
-      "question": "¿Está regulado por la CNMV?",
-      "answer": "No. No constituye una oferta pública de valores."
+      "question": "Est-il réglementé par la CNMV ?",
+      "answer": "Non. Il ne constitue pas une offre publique de titres."
     },
     {
       "id": "rentabilidad",
-      "question": "¿La rentabilidad está garantizada?",
-      "answer": "No. No existen garantías de rentabilidad ni de devolución del capital."
+      "question": "La rentabilité est-elle garantie ?",
+      "answer": "Non. Aucune garantie de rendement ni de remboursement du capital."
     },
     {
       "id": "riesgo",
-      "question": "¿Puedo perder mi dinero?",
-      "answer": "Sí. Existe riesgo de pérdida total o parcial."
+      "question": "Puis-je perdre mon argent ?",
+      "answer": "Oui. Il existe un risque de perte totale ou partielle."
     },
     {
       "id": "liquidez",
-      "question": "¿Puedo retirar la inversión cuando quiera?",
-      "answer": "No. No existe liquidez inmediata ni derecho de rescate."
+      "question": "Puis-je retirer mon investissement à tout moment ?",
+      "answer": "Non. Il n’existe pas de liquidité immédiate ni de droit de rachat."
     },
     {
       "id": "acciones",
-      "question": "¿Recibo acciones o participaciones?",
-      "answer": "No en la inversión desde 100 €. Solo se adquieren derechos económicos."
+      "question": "Reçois-je des actions ou parts sociales ?",
+      "answer": "Non pour les investissements à partir de 100 €. Seuls des droits économiques sont acquis."
     },
     {
       "id": "venta",
-      "question": "¿Puedo vender mi inversión?",
-      "answer": "No libremente. No existe mercado secundario."
+      "question": "Puis-je vendre mon investissement ?",
+      "answer": "Pas librement. Il n’existe pas de marché secondaire."
     },
     {
       "id": "informacion",
-      "question": "¿Cómo se me informa?",
-      "answer": "Mediante comunicaciones generales periódicas."
+      "question": "Comment suis-je informé ?",
+      "answer": "Par des communications générales périodiques."
     },
     {
       "id": "gestion",
-      "question": "¿Quién gestiona el proyecto?",
-      "answer": "El equipo promotor de PITLANE."
+      "question": "Qui gère le projet ?",
+      "answer": "L’équipe promotrice de PITLANE."
     },
     {
       "id": "jurisdiccion",
-      "question": "¿Qué legislación se aplica?",
-      "answer": "La inversión se rige por la legislación española y los tribunales españoles."
+      "question": "Quelle législation s’applique ?",
+      "answer": "L’investissement est régi par le droit espagnol et les tribunaux espagnols."
     }
   ]
 }
