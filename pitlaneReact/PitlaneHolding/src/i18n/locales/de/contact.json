@@ -1,36 +1,36 @@
 {
-  "title": "Interested in investing?",
-  "subtitle": "Fill out the form below and we will get back to you as soon as possible.",
+  "title": "Interesse an einer Investition?",
+  "subtitle": "Füllen Sie das Formular aus und ein Teammitglied wird Sie schnellstmöglich kontaktieren.",
   "placeholders": {
-    "name": "Enter your full name",
-    "email": "Enter your email address",
-    "number": "(+1) 555 123 4567",
-    "company": "Enter the name of your company or investment fund",
-    "message": "Write your message here"
+    "name": "Geben Sie Ihren vollständigen Namen ein",
+    "email": "Geben Sie Ihre E-Mail-Adresse ein",
+    "number": "(+34) 600 000 000",
+    "company": "Geben Sie den Namen Ihres Unternehmens oder Fonds ein",
+    "message": "Schreiben Sie hier Ihre Nachricht"
   },
   "button": {
-    "send": "Send",
-    "sending": "Sending...",
-    "sent": "✔ Sent!"
+    "send": "Senden",
+    "sending": "Wird gesendet...",
+    "sent": "✔ Gesendet!"
   },
   "fields": {
-    "name": "Full Name",
-    "email": "Email Address",
-    "number": "Phone Number",
-    "company": "Company / Investment Fund",
-    "message": "Message"
+    "name": "Vollständiger Name",
+    "email": "E-Mail-Adresse",
+    "number": "Telefon",
+    "company": "Unternehmen / Investmentfonds",
+    "message": "Nachricht"
   },
   "validation": {
-    "invalidNumber": "Please enter a valid phone number"
+    "invalidNumber": "Bitte geben Sie eine gültige Telefonnummer ein"
   },
   "modal": {
-    "successTitle": "Form sent!",
-    "successMessage": "Your message has been successfully sent.",
-    "errorTitle": "Error",
-    "errorMessage": "Unable to send.",
-    "validationTitle": "Fix the fields",
-    "validationMessage": "There are errors in the form.",
-    "unexpectedTitle": "Unexpected error",
-    "unexpectedMessage": "The form could not be sent."
+    "successTitle": "Formular gesendet!",
+    "successMessage": "Ihre Nachricht wurde erfolgreich gesendet.",
+    "errorTitle": "Fehler",
+    "errorMessage": "Senden fehlgeschlagen.",
+    "validationTitle": "Felder korrigieren",
+    "validationMessage": "Es gibt Fehler im Formular.",
+    "unexpectedTitle": "Unerwarteter Fehler",
+    "unexpectedMessage": "Das Formular konnte nicht gesendet werden."
   }
 }
