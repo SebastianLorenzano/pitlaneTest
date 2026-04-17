@@ -1,29 +1,29 @@
 {
-  "eyebrow": "THE CENTRE",
-  "title": "An integrated complex designed to operate year-round",
-  "subtitle": "The centre is structured around complementary assets that generate activity, demand and visibility across the entire project.",
-  "paragraph1": "Each part is designed to work independently, while reinforcing the others through shared traffic, events and services.",
-  "paragraph2": "This is the foundation for a scalable operation with multiple income lines and controlled execution.",
+  "eyebrow": "LE CENTRE",
+  "title": "Un complexe intégré conçu pour fonctionner toute l’année",
+  "subtitle": "Le centre s’organise autour d’actifs complémentaires générant activité, demande et visibilité.",
+  "paragraph1": "Chaque composant fonctionne de manière indépendante tout en se renforçant grâce aux flux partagés, événements et services.",
+  "paragraph2": "C’est la base d’une opération évolutive avec plusieurs sources de revenus et une exécution maîtrisée.",
   "items": [
     {
       "key": "circuit",
-      "title": "Motor Circuit",
-      "text": "Infrastructure for training, competitions and private track experiences."
+      "title": "Circuit automobile",
+      "text": "Infrastructure pour entraînements, compétitions et expériences privées."
     },
     {
       "key": "performance",
-      "title": "High Performance",
-      "text": "Facilities for athlete preparation, recovery and specialised programs."
+      "title": "Haut rendement",
+      "text": "Installations pour préparation sportive, récupération et programmes spécialisés."
     },
     {
       "key": "events",
-      "title": "Events & Hospitality",
-      "text": "Brand activations, corporate events and premium guest experiences."
+      "title": "Événements & Hospitality",
+      "text": "Activations de marque, événements d’entreprise et expériences premium."
     },
     {
       "key": "tech",
-      "title": "Technology Platform",
-      "text": "Digital layer to connect users, operations and investment transparency."
+      "title": "Plateforme technologique",
+      "text": "Couche digitale reliant utilisateurs, opérations et transparence de l’investissement."
     }
   ]
 }

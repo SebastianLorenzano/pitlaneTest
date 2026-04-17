@@ -1,29 +1,29 @@
 {
-  "eyebrow": "THE CENTRE",
-  "title": "An integrated complex designed to operate year-round",
-  "subtitle": "The centre is structured around complementary assets that generate activity, demand and visibility across the entire project.",
-  "paragraph1": "Each part is designed to work independently, while reinforcing the others through shared traffic, events and services.",
-  "paragraph2": "This is the foundation for a scalable operation with multiple income lines and controlled execution.",
+  "eyebrow": "IL CENTRO",
+  "title": "Un complesso integrato progettato per operare tutto l’anno",
+  "subtitle": "Il centro è strutturato attorno ad asset complementari che generano attività, domanda e visibilità.",
+  "paragraph1": "Ogni componente funziona in modo indipendente, rafforzandosi tramite traffico condiviso, eventi e servizi.",
+  "paragraph2": "Questa è la base di un’operazione scalabile con più fonti di reddito e un’esecuzione controllata.",
   "items": [
     {
       "key": "circuit",
-      "title": "Motor Circuit",
-      "text": "Infrastructure for training, competitions and private track experiences."
+      "title": "Circuito motoristico",
+      "text": "Infrastruttura per allenamenti, competizioni ed esperienze in pista."
     },
     {
       "key": "performance",
-      "title": "High Performance",
-      "text": "Facilities for athlete preparation, recovery and specialised programs."
+      "title": "Alto rendimento",
+      "text": "Strutture per preparazione sportiva, recupero e programmi specializzati."
     },
     {
       "key": "events",
-      "title": "Events & Hospitality",
-      "text": "Brand activations, corporate events and premium guest experiences."
+      "title": "Eventi & Hospitality",
+      "text": "Attivazioni di brand, eventi aziendali ed esperienze premium."
     },
     {
       "key": "tech",
-      "title": "Technology Platform",
-      "text": "Digital layer to connect users, operations and investment transparency."
+      "title": "Piattaforma tecnologica",
+      "text": "Livello digitale che connette utenti, operazioni e trasparenza dell’investimento."
     }
   ]
 }

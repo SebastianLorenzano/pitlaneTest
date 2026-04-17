@@ -1,19 +1,19 @@
 {
-  "eyebrow": "THE CENTRE",
+  "eyebrow": "THE CENTER",
   "title": "An integrated complex designed to operate year-round",
-  "subtitle": "The centre is structured around complementary assets that generate activity, demand and visibility across the entire project.",
-  "paragraph1": "Each part is designed to work independently, while reinforcing the others through shared traffic, events and services.",
-  "paragraph2": "This is the foundation for a scalable operation with multiple income lines and controlled execution.",
+  "subtitle": "The center is structured around complementary assets that generate activity, demand and visibility across the entire project.",
+  "paragraph1": "Each component is designed to operate independently, while reinforcing one another through shared traffic, events and services.",
+  "paragraph2": "This is the foundation of a scalable operation, with multiple revenue streams and controlled execution.",
   "items": [
     {
       "key": "circuit",
       "title": "Motor Circuit",
-      "text": "Infrastructure for training, competitions and private track experiences."
+      "text": "Infrastructure for training, competitions and private on-track experiences."
     },
     {
       "key": "performance",
       "title": "High Performance",
-      "text": "Facilities for athlete preparation, recovery and specialised programs."
+      "text": "Facilities for athletic preparation, recovery and specialized programs."
     },
     {
       "key": "events",
@@ -23,7 +23,7 @@
     {
       "key": "tech",
       "title": "Technology Platform",
-      "text": "Digital layer to connect users, operations and investment transparency."
+      "text": "Digital layer connecting users, operations and investment transparency."
     }
   ]
 }

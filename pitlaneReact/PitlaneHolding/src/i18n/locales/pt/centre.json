@@ -1,29 +1,29 @@
 {
-  "eyebrow": "THE CENTRE",
-  "title": "An integrated complex designed to operate year-round",
-  "subtitle": "The centre is structured around complementary assets that generate activity, demand and visibility across the entire project.",
-  "paragraph1": "Each part is designed to work independently, while reinforcing the others through shared traffic, events and services.",
-  "paragraph2": "This is the foundation for a scalable operation with multiple income lines and controlled execution.",
+  "eyebrow": "O CENTRO",
+  "title": "Um complexo integrado projetado para operar durante todo o ano",
+  "subtitle": "O centro é estruturado em torno de ativos complementares que geram atividade, demanda e visibilidade.",
+  "paragraph1": "Cada componente funciona de forma independente, reforçando-se através de tráfego compartilhado, eventos e serviços.",
+  "paragraph2": "Esta é a base de uma operação escalável, com múltiplas fontes de receita e execução controlada.",
   "items": [
     {
       "key": "circuit",
-      "title": "Motor Circuit",
-      "text": "Infrastructure for training, competitions and private track experiences."
+      "title": "Circuito de Motor",
+      "text": "Infraestrutura para treinos, competições e experiências privadas na pista."
     },
     {
       "key": "performance",
-      "title": "High Performance",
-      "text": "Facilities for athlete preparation, recovery and specialised programs."
+      "title": "Alto rendimento",
+      "text": "Instalações para preparação esportiva, recuperação e programas especializados."
     },
     {
       "key": "events",
-      "title": "Events & Hospitality",
-      "text": "Brand activations, corporate events and premium guest experiences."
+      "title": "Eventos & Hospitality",
+      "text": "Ativações de marca, eventos corporativos e experiências premium."
     },
     {
       "key": "tech",
-      "title": "Technology Platform",
-      "text": "Digital layer to connect users, operations and investment transparency."
+      "title": "Plataforma tecnológica",
+      "text": "Camada digital que conecta usuários, operações e transparência do investimento."
     }
   ]
 }
