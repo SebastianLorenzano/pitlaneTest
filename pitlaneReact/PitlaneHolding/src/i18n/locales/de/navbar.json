@@ -1,6 +1,7 @@
 {
-  "project": "Projekt",
-  "about": "Über uns",
-  "contact": "Kontakt",
-  "download": "Projekt herunterladen"
+    "centre": "Zentrum",
+    "project": "Strecke",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "download": "Projekt herunterladen"
 }
