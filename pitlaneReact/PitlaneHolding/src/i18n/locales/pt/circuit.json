@@ -1,20 +1,20 @@
 {
-  "title": "A new era for motorsport and high performance",
-  "locationLabel": "Location:",
-  "locationValue": "Agost, Alicante",
-  "surfaceLabel": "Surface:",
-  "surfaceValue": "2,200,000 m²",
-  "homologationLabel": "Homologation:",
-  "homologationValue": "FIA Grade 1",
-  "performanceCenter": "High performance center",
-  "zonesLabel": "Zones:",
-  "zonesValue": "Karting, dirt and simulators",
+  "title": "Uma nova era para o automobilismo e o alto rendimento",
+  "locationLabel": "Localização:",
+  "locationValue": "Província de Alicante (Comunidade Valenciana)",
+  "surfaceLabel": "Superfície:",
+  "surfaceValue": "2.200.000 m²",
+  "homologationLabel": "Homologação:",
+  "homologationValue": "Licença FIA Grau 1",
+  "performanceCenter": "Centro de alto rendimento",
+  "zonesLabel": "Zonas:",
+  "zonesValue": "Circuito principal, karting, área off-road e simuladores",
   "features": {
-    "structure": "Complete Structure",
-    "structureDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Curabitur ac lorem nec sapien volutpat.",
-    "business": "Profitable business model",
-    "businessDesc": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
-    "location": "Strategic Location",
-    "locationDesc": "Integer maximus neque a magna ultricies, eget malesuada lacus vehicula. Sed at tellus id magna cursus posuere."
+    "structure": "Estrutura integrada",
+    "structureDesc": "A PITLANE é concebida como um complexo multifuncional que integra um circuito de última geração, um centro de alto rendimento, áreas de eventos e hospitality e uma plataforma tecnológica própria.",
+    "business": "Modelo de negócio diversificado",
+    "businessDesc": "O projeto apoia-se em múltiplas fontes de receita, incluindo utilização do circuito, eventos, programas de formação, hospitality e acordos estratégicos.",
+    "location": "Localização estratégica",
+    "locationDesc": "A localização em Alicante oferece vantagens climáticas, conectividade e proximidade a infraestruturas chave."
   }
 }

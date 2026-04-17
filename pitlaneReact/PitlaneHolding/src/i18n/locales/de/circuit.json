@@ -1,20 +1,20 @@
 {
-  "title": "A new era for motorsport and high performance",
-  "locationLabel": "Location:",
-  "locationValue": "Agost, Alicante",
-  "surfaceLabel": "Surface:",
-  "surfaceValue": "2,200,000 m²",
+  "title": "Eine neue Ära für Motorsport und Hochleistung",
+  "locationLabel": "Standort:",
+  "locationValue": "Provinz Alicante (Autonome Gemeinschaft Valencia)",
+  "surfaceLabel": "Fläche:",
+  "surfaceValue": "2.200.000 m²",
   "homologationLabel": "Homologation:",
-  "homologationValue": "FIA Grade 1",
-  "performanceCenter": "High performance center",
-  "zonesLabel": "Zones:",
-  "zonesValue": "Karting, dirt and simulators",
+  "homologationValue": "FIA Grade 1 Lizenz",
+  "performanceCenter": "Hochleistungszentrum",
+  "zonesLabel": "Bereiche:",
+  "zonesValue": "Hauptstrecke, Karting, Offroad-Bereich und Simulatoren",
   "features": {
-    "structure": "Complete Structure",
-    "structureDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti. Curabitur ac lorem nec sapien volutpat.",
-    "business": "Profitable business model",
-    "businessDesc": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
-    "location": "Strategic Location",
-    "locationDesc": "Integer maximus neque a magna ultricies, eget malesuada lacus vehicula. Sed at tellus id magna cursus posuere."
+    "structure": "Integrierte Struktur",
+    "structureDesc": "PITLANE ist als multifunktionaler Komplex konzipiert, der eine moderne Rennstrecke, ein Hochleistungszentrum, Event- und Hospitality-Bereiche sowie eine eigene technologische Plattform integriert und für den ganzjährigen Betrieb ausgelegt ist.",
+    "business": "Diversifiziertes Geschäftsmodell",
+    "businessDesc": "Das Projekt basiert auf mehreren komplementären Einnahmequellen, darunter Streckennutzung, Sport- und Firmenevents, Trainingsprogramme, Hospitality, strategische Partnerschaften und Asset-Nutzung.",
+    "location": "Strategischer Standort",
+    "locationDesc": "Der Standort in der Provinz Alicante bietet klimatische Vorteile, nationale und internationale Anbindung sowie Nähe zu wichtigen Infrastrukturen."
   }
 }
