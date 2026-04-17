@@ -14,7 +14,6 @@ var namespaces = [
   "faq",
   "hero",
   "navbar",
-  "projectDetails",
   "timeline"
 ];
 
