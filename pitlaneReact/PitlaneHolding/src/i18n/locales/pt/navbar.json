@@ -1,6 +1,7 @@
 {
-  "project": "Projeto",
-  "about": "Sobre nós",
-  "contact": "Contato",
-  "download": "Baixar projeto"
+    "centre": "Centro",
+    "project": "Circuito",
+    "about": "Sobre nós",
+    "contact": "Contato",
+    "download": "Baixar o projeto"
 }
