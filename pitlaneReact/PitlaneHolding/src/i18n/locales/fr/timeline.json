@@ -1,37 +1,31 @@
 {
-  "title": "Project roadmap",
-  "subtitle": "Explore each stage to understand how we move from concept to a fully operational motorsport complex.",
-  "stage": "STAGE",
+  "title": "Feuille de route du projet",
+  "subtitle": "Explorez chaque phase pour comprendre comment PITLANE évolue de manière ordonnée, validée par des jalons et orientée vers la création d’actifs réels à forte valeur.",
+  "stage": "ÉTAPE",
   "stages": [
     {
-      "title": "Vision",
-      "contentTitle": "Vision & strategic alignment",
-      "contentText": "Define the long-term value, positioning and investment thesis.",
-      "contentDetailedText": "We establish the project’s purpose, target audiences, and strategic differentiation. This includes defining success metrics, the macro roadmap, and ensuring alignment between stakeholders, legal context, and market reality."
+      "title": "Structuration",
+      "contentTitle": "Structuration et actifs de base",
+      "contentText": "Définition, sécurisation et validation des fondations juridiques, techniques et patrimoniales du projet.",
+      "contentDetailedText": "Cette phase constitue la base critique du projet et vise à réduire de manière substantielle le risque avant toute exécution constructive. Elle comprend la sécurisation du foncier, l’obtention des autorisations et de la viabilité administrative, le développement du projet technique et de la conception intégrée du complexe, ainsi que la structuration juridique, sociétaire et financière du groupe. Chacun de ces éléments est validé au moyen de livrables concrets et vérifiables. À la clôture de cette phase, PITLANE passe d’une opportunité structurée à un actif prêt à être construit, augmentant de manière significative sa valorisation et son attractivité pour les phases d’investissement suivantes."
     },
     {
-      "title": "Feasibility",
-      "contentTitle": "Feasibility & validation",
-      "contentText": "Validate demand, constraints, and the viability of the plan.",
-      "contentDetailedText": "We analyze location constraints, regulations, environmental considerations, traffic and access, potential partners, and the competitive landscape. The output is a feasibility report with risks, mitigation actions, and an actionable go/no-go."
+      "title": "Circuit",
+      "contentTitle": "Construction du circuit",
+      "contentText": "Exécution de l’infrastructure principale et activation du premier actif opérationnel du groupe.",
+      "contentDetailedText": "Une fois la phase de structuration achevée et validée, la construction du circuit de vitesse et de ses infrastructures associées est engagée conformément au projet technique approuvé. Cette étape comprend les processus d’homologation nécessaires ainsi que la mise en exploitation de l’actif principal. En parallèle, les premiers accords commerciaux, sportifs et institutionnels sont formalisés afin d’activer le circuit et de commencer à générer des revenus. La fin de cette phase est validée par un actif physique opérationnel, homologué et capable de produire une activité économique réelle."
     },
     {
-      "title": "Design",
-      "contentTitle": "Masterplan & design",
-      "contentText": "Translate the vision into an actionable and buildable plan.",
-      "contentDetailedText": "We define the circuit layout, zones, high performance center requirements, and infrastructure. This phase includes conceptual design, preliminary budgeting, timeline estimation, and the technical basis for homologation planning."
+      "title": "Centre",
+      "contentTitle": "Centre de haute performance et événements",
+      "contentText": "Diversification des activités, consolidation opérationnelle et renforcement de la marque PITLANE.",
+      "contentDetailedText": "Cette phase élargit le modèle grâce au développement du centre de haute performance sportive et à la structuration du pôle événements et hospitality. Des accords institutionnels, sportifs et stratégiques sont formalisés, et la base d’utilisateurs et de clients du complexe est élargie. La diversification des revenus réduit la dépendance à un seul actif et apporte une plus grande stabilité à l’ensemble du projet. Chaque avancée est validée par la mise en service de nouvelles installations et la génération d’une activité récurrente, renforçant PITLANE comme plateforme intégrée."
     },
     {
-      "title": "Permits",
-      "contentTitle": "Permits & compliance",
-      "contentText": "Secure legal approvals and align stakeholders.",
-      "contentDetailedText": "We manage permits, municipal requirements, safety standards, and compliance reviews. Stakeholder alignment is critical here: land, engineering, legal, and operational requirements must converge to avoid delays later."
-    },
-    {
-      "title": "Build",
-      "contentTitle": "Construction & execution",
-      "contentText": "Build the infrastructure and track with controlled milestones.",
-      "contentDetailedText": "This stage focuses on execution: earthworks, track surface, facilities, utilities, safety systems, and zone development. We track quality and timeline with milestone-based reporting and continuous risk management."
+      "title": "Scalabilité",
+      "contentTitle": "Montée en échelle, technologie et expansion",
+      "contentText": "Maximisation de la valeur du groupe et projection à long terme.",
+      "contentDetailedText": "La phase finale est orientée vers la montée en échelle du modèle déjà validé, soutenue par la couche technologique, le développement de la communauté et les canaux numériques d’investissement et d’exploitation. Elle comprend l’optimisation des processus, l’expansion internationale progressive et la consolidation du groupe comme plateforme de référence réplicable. Cette étape n’introduit pas de nouveau risque structurel, mais capitalise sur les actifs, l’expérience opérationnelle et la structure d’entreprise construites lors des phases précédentes, avec pour objectif de maximiser la valeur globale du groupe PITLANE à long terme."
     }
   ]
 }
