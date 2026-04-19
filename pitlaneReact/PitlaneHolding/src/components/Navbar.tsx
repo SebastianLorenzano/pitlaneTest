@@ -24,7 +24,7 @@ function Navbar(): React.JSX.Element {
     }
 
     const handleResize = () => {
-      if (window.innerWidth >= 768) closeMenu()
+      if (window.innerWidth >= 1150) closeMenu()
     }
 
     window.addEventListener("keydown", handleKeyDown)
@@ -40,12 +40,11 @@ function Navbar(): React.JSX.Element {
     <>
       <header className="sticky top-0 z-50 font-orbitron">
         <nav className="bg-[var(--color-primary)] shadow-lg opacity-95 backdrop-blur-sm">
-          <div className="mx-auto px-6">
+          <div className="mx-auto px-4 lg:px-6">
             <div className="flex justify-between items-center py-3">
-
               {/* Logo */}
               <div className="flex items-center">
-                <div className="w-32 h-24 md:w-40 md:h-24 flex items-center justify-center mr-4">
+                <div className="w-32 h-24 min-[1150px]:w-40 min-[1150px]:h-24 flex items-center justify-center mr-4">
                   <img
                     src={logo}
                     alt="Logo"
@@ -55,39 +54,65 @@ function Navbar(): React.JSX.Element {
               </div>
 
               {/* Desktop Menu */}
-              <div className="hidden md:flex items-center space-x-4">
-
-                <a href="#centre" className="navbar-link text-[var(--color-text-muted)] font-medium text-[1.3rem]">
+              <div className="hidden min-[1150px]:flex items-center space-x-3">
+                <a
+                  href="#centre"
+                  className="navbar-link text-[var(--color-text-muted)] font-medium text-[1.1rem] xl:text-[1.3rem]"
+                >
                   {t("centre")}
                 </a>
                 <span className="text-gray-400">|</span>
 
-                <a href="#circuit" className="navbar-link text-[var(--color-text-muted)] font-medium text-[1.3rem]">
+                <a
+                  href="#circuit"
+                  className="navbar-link text-[var(--color-text-muted)] font-medium text-[1.1rem] xl:text-[1.3rem]"
+                >
                   {t("project")}
                 </a>
                 <span className="text-gray-400">|</span>
 
-                <a href="#about-us" className="navbar-link text-[var(--color-text-muted)] font-medium text-[1.3rem]">
+                <a
+                  href="#about-us"
+                  className="navbar-link text-[var(--color-text-muted)] font-medium text-[1.1rem] xl:text-[1.3rem]"
+                >
                   {t("about")}
                 </a>
                 <span className="text-gray-400">|</span>
 
-                <a href="#contact" className="navbar-link text-[var(--color-text-muted)] font-medium text-[1.3rem]">
-                  {t("contact")}
+                <a
+                  href="#timeline"
+                  className="navbar-link text-[var(--color-text-muted)] font-medium text-[1.1rem] xl:text-[1.3rem]"
+                >
+                  {t("timeline")}
                 </a>
                 <span className="text-gray-400">|</span>
 
-                <a href="#download" className="navbar-link text-[var(--color-text-muted)] font-medium text-[1.3rem]">
+                <a
+                  href="#download"
+                  className="navbar-link text-[var(--color-text-muted)] font-medium text-[1.1rem] xl:text-[1.3rem]"
+                >
                   {t("download")}
+                </a>
+                <span className="text-gray-400">|</span>
+
+                <a
+                  href="#contact"
+                  className="navbar-link text-[var(--color-text-muted)] font-medium text-[1.1rem] xl:text-[1.3rem]"
+                >
+                  {t("contact")}
                 </a>
 
                 <LanguageSwitcher />
               </div>
 
-              {/* Mobile Hamburger */}
-              <div className="md:hidden flex items-center">
+              {/* Mobile / Tablet Hamburger */}
+              <div className="min-[1150px]:hidden flex items-center gap-3">
                 <LanguageSwitcher />
-                <button onClick={openMenu} className="text-[var(--color-text-muted)] focus:outline-none">
+                <button
+                  onClick={openMenu}
+                  className="text-[var(--color-text-muted)] focus:outline-none"
+                  aria-label="Open menu"
+                >
                   <div className="space-y-1">
                     <span className="hamburger-line"></span>
                     <span className="hamburger-line"></span>
@@ -108,26 +133,67 @@ function Navbar(): React.JSX.Element {
 
       {/* Mobile Menu */}
       <div
-        className={`slide-menu fixed top-0 right-0 h-full w-64 bg-primary shadow-2xl z-50 ${
+        className={`slide-menu fixed top-0 right-0 h-full w-64 sm:w-72 bg-primary shadow-2xl z-50 ${
           menuOpen ? "open" : ""
         }`}
       >
         <div className="flex justify-end p-4">
-          <button onClick={closeMenu} className="text-[var(--color-text-muted)] text-3xl">&times;</button>
+          <button
+            onClick={closeMenu}
+            className="text-[var(--color-text-muted)] text-3xl"
+            aria-label="Close menu"
+          >
+            &times;
+          </button>
         </div>
 
         <div className="flex flex-col px-6 py-4 space-y-5">
-          <a href="#project" className="navbar-link text-[var(--color-text-muted)] font-medium text-lg py-2 border-b border-gray-700">
-            {t("navbar.project")}
+          <a
+            href="#centre"
+            onClick={closeMenu}
+            className="navbar-link text-[var(--color-text-muted)] font-medium text-lg py-2 border-b border-gray-700"
+          >
+            {t("centre")}
           </a>
-          <a href="#about-us" className="navbar-link text-[var(--color-text-muted)] font-medium text-lg py-2 border-b border-gray-700">
-            {t("navbar.about")}
+
+          <a
+            href="#circuit"
+            onClick={closeMenu}
+            className="navbar-link text-[var(--color-text-muted)] font-medium text-lg py-2 border-b border-gray-700"
+          >
+            {t("project")}
           </a>
-          <a href="#contact" className="navbar-link text-[var(--color-text-muted)] font-medium text-lg py-2 border-b border-gray-700">
-            {t("navbar.contact")}
+
+          <a
+            href="#about-us"
+            onClick={closeMenu}
+            className="navbar-link text-[var(--color-text-muted)] font-medium text-lg py-2 border-b border-gray-700"
+          >
+            {t("about")}
           </a>
-          <a href="#download" className="navbar-link text-[var(--color-text-muted)] font-medium text-lg py-2 border-b border-gray-700">
-            {t("navbar.download")}
+
+          <a
+            href="#timeline"
+            onClick={closeMenu}
+            className="navbar-link text-[var(--color-text-muted)] font-medium text-lg py-2 border-b border-gray-700"
+          >
+            {t("timeline")}
+          </a>
+
+          <a
+            href="#download"
+            onClick={closeMenu}
+            className="navbar-link text-[var(--color-text-muted)] font-medium text-lg py-2 border-b border-gray-700"
+          >
+            {t("download")}
+          </a>
+
+          <a
+            href="#contact"
+            onClick={closeMenu}
+            className="navbar-link text-[var(--color-text-muted)] font-medium text-lg py-2 border-b border-gray-700"
+          >
+            {t("contact")}
           </a>
         </div>
       </div>
