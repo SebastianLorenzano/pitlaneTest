@@ -29,7 +29,10 @@ export default function TimelineSection(): React.ReactElement {
   var activeStage = stages[activeIndex];
 
   return (
-    <section id="timeline" className="relative w-full py-24 font-orbitron overflow-hidden">
+    <section
+      id="timeline"
+      className="relative w-full py-24 font-orbitron overflow-hidden flex items-center"
+      style={{ minHeight: "calc(100vh - 7rem)" }}>
       {/* Background image */}
       <div
         className="absolute inset-0 z-[-20] bg-fixed bg-cover bg-center"
@@ -39,7 +42,7 @@ export default function TimelineSection(): React.ReactElement {
       <div className="absolute inset-0 z-[-10] bg-[var(--color-primary)]/75" />
 
       {/* Content */}
-      <div className="relative z-10 mx-auto w-full max-w-5xl px-4">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-4">
         {/* Header */}
         <div className="mb-12 text-center">
           <h2 className="text-3xl sm:text-4xl font-semibold text-[var(--color-text-muted)]">

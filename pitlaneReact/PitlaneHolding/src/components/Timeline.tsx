@@ -149,7 +149,7 @@ export default function Timeline(props: TimelineProps): React.ReactElement {
                   <span
                     className={[
                       "text-[11px] sm:text-xs tracking-wide transition-colors duration-300",
-                      "max-w-[90px] text-center",
+                      "max-w-[120px] lg:max-w-[140px] text-center",
                       isActive
                         ? "text-[var(--color-primary-neon)]"
                         : "text-[var(--color-text-muted)]/70",
