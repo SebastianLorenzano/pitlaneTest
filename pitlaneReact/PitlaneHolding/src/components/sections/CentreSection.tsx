@@ -5,6 +5,8 @@ import backgroundImage from "../../assets/img/background6.png"
 import centre1 from "../../assets/img/centre/centre1.jpg"
 import centre2 from "../../assets/img/centre/centre2.jpg"
 import centre3 from "../../assets/img/centre/centre3.jpg"
+import centre4 from "../../assets/img/centre/centre4.jpg"
+import centre5 from "../../assets/img/centre/centre5.jpg"
 
 import ImageCarousel from "../ImageCarousel"
 
@@ -27,9 +29,11 @@ function CentreSection(): React.JSX.Element {
   const [visible, setVisible] = useState(false)
   const sectionRef = useRef<HTMLElement | null>(null)
   const images = [
-  { id: "centre-1", src: centre1, alt: "PITLANE centre overview" },
-  { id: "centre-2", src: centre2, alt: "Circuit and paddock area" },
-  { id: "centre-3", src: centre3, alt: "High performance facilities" },
+  { id: "centre-1", src: centre1, alt: "Centre installations 1" },
+  { id: "centre-2", src: centre2, alt: "Centre installations 2" },
+  { id: "centre-3", src: centre3, alt: "Centre installations 3" },
+  { id: "centre-4", src: centre4, alt: "Centre commerces" },
+  { id: "centre-5", src: centre5, alt: "centre car gallery" },
 ]
 
 
