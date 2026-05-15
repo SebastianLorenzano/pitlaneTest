@@ -5,54 +5,84 @@ import backgroundImage from "../../assets/img/background1.png"
 import Lenis from "@studio-freight/lenis"
 import YouTubeCarousel from "../YoutubeCarousel"
 
-
-
+type YouTubeItem = {
+  id: string
+  youtubeId: string
+}
 
 function HeroSection(): React.JSX.Element {
   const { t } = useTranslation("hero")
 
-  // The full text now comes from translations
   const fullText = t("slogan")
 
   const [displayedText, setDisplayedText] = useState("")
   const [buttonsVisible, setButtonsVisible] = useState(false)
-
-  const youtubeVideos = [
-  { id: "yt1", youtubeId: "1GpGbTXmQu8" },
-  { id: "yt2", youtubeId: "UYh8ATF8L0c" },
-  { id: "yt3", youtubeId: "k0Pmj2wxNXw" }
- ]
+  const [youtubeVideos, setYoutubeVideos] = useState<YouTubeItem[]>([])
 
   const indexRef = useRef(0)
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
 
+  useEffect(() => {
+    async function loadYoutubeVideos(): Promise<void> {
+      try {
+        const response = await fetch("/api/youtube/videos")
+
+        if (!response.ok) {
+          throw new Error("Could not load YouTube videos")
+        }
+
+        const videoIds = (await response.json()) as string[]
+
+        const items = videoIds.map(function (youtubeId, index) {
+          return {
+            id: "youtube-video-" + index,
+            youtubeId: youtubeId
+          }
+        })
+
+        setYoutubeVideos(items)
+      } catch (error) {
+        console.error(error)
+        setYoutubeVideos([])
+      }
+    }
+
+    loadYoutubeVideos()
+  }, [])
 
   // Smooth scrolling with Lenis
   useEffect(() => {
     const lenis = new Lenis()
+
     const raf = (time: number) => {
       lenis.raf(time)
       requestAnimationFrame(raf)
     }
+
     requestAnimationFrame(raf)
 
-    // Smooth anchor navigation
     const links = document.querySelectorAll('a[href^="#"]')
+
     links.forEach((link) => {
       link.addEventListener("click", (e) => {
         e.preventDefault()
-        const target = document.querySelector(link.getAttribute("href")!) as HTMLElement | null
-        if (target)
+
+        const target = document.querySelector(
+          link.getAttribute("href")!
+        ) as HTMLElement | null
+
+        if (target) {
           lenis.scrollTo(target, {
             offset: -120
           })
+        }
       })
     })
 
     return () => lenis.destroy()
   }, [])
 
-  // Typewriter effect → depends on translated slogan
+  // Typewriter effect
   useEffect(() => {
     indexRef.current = 0
     setDisplayedText("")
@@ -73,23 +103,20 @@ function HeroSection(): React.JSX.Element {
     return () => {
       if (timeoutRef.current !== null) clearTimeout(timeoutRef.current)
     }
-  }, [fullText]) // re-trigger animation when language changes
+  }, [fullText])
 
   return (
     <main
       className="relative overflow-hidden font-orbitron flex flex-col items-center justify-center"
       style={{ minHeight: "calc(100vh - 7rem)" }}
     >
-      {/* Background */}
       <div
         className="absolute inset-0 z-[-20] bg-fixed bg-cover bg-center"
         style={{ backgroundImage: `url("${backgroundImage}")` }}
       />
 
-      {/* Blue transparent overlay */}
       <div className="absolute inset-0 bg-[var(--color-primary)]/70 z-[-10]" />
 
-      {/* Content */}
       <div className="relative z-10 text-[var(--color-text-muted)] text-center px-4">
         <img
           className="h-28 sm:h-28 md:h-36 lg:h-48 mx-auto mb-4 transition-all duration-300"
@@ -97,12 +124,13 @@ function HeroSection(): React.JSX.Element {
           alt="Logo"
         />
 
-        <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl whitespace-normal leading-tight
-         text-[var(--color-text)]">
+        <h1
+          className="text-xl sm:text-2xl md:text-4xl lg:text-5xl whitespace-normal leading-tight
+          text-[var(--color-text)]"
+        >
           {displayedText}
         </h1>
 
-        {/* Buttons */}
         <div
           className={`
             mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center transition-all duration-700
@@ -112,8 +140,8 @@ function HeroSection(): React.JSX.Element {
           <a
             href="#about-us"
             className="px-6 py-3 rounded-lg border-2 border-[var(--color-primary-neon)] text-[var(--color-primary-neon)] 
-                      font-semibold shadow-lg hover:bg-[var(--color-primary-neon)] hover:text-[var(--color-primary)] 
-                      hover:scale-105 transition-all duration-300"
+            font-semibold shadow-lg hover:bg-[var(--color-primary-neon)] hover:text-[var(--color-primary)] 
+            hover:scale-105 transition-all duration-300"
           >
             {t("about")}
           </a>
@@ -121,14 +149,15 @@ function HeroSection(): React.JSX.Element {
           <a
             href="#contact"
             className="px-6 py-3 rounded-lg bg-[var(--color-primary-neon)] text-[var(--color-primary)] font-semibold 
-                      shadow-lg hover:scale-105 transition-all duration-300"
+            shadow-lg hover:scale-105 transition-all duration-300"
           >
             {t("contact")}
           </a>
         </div>
-        <YouTubeCarousel items={youtubeVideos} />
 
-
+        {youtubeVideos.length > 0 && (
+          <YouTubeCarousel items={youtubeVideos} />
+        )}
       </div>
     </main>
   )
