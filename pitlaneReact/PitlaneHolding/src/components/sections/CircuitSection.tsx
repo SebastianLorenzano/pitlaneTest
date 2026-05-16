@@ -21,6 +21,16 @@ function CircuitSection(): React.JSX.Element {
 
   const detailText = type.cardText
 
+  const featureTitle = (key: string) => (
+    <div className="h-12 flex items-center justify-center">
+      <p className={`${type.cardTitle} leading-tight`}>
+        <span className={type.cardTitleHover}>
+          {t(key)}
+        </span>
+      </p>
+    </div>
+  )
+
   return (
     <section
       id="circuit"
@@ -123,39 +133,21 @@ function CircuitSection(): React.JSX.Element {
         <FeatureCard
           className={`group flex flex-col items-center ${surface.featureCard}`}
           Icon={GiProcessor}
-          text={
-            <p className={type.cardTitle}>
-              <span className={type.cardTitleHover}>
-                {t("features.structure")}
-              </span>
-            </p>
-          }
+          text={featureTitle("features.structure")}
           details={t("features.structureDesc")}
         />
 
         <FeatureCard
           className={`group flex flex-col items-center ${surface.featureCard}`}
           Icon={FaChartLine}
-          text={
-            <p className={type.cardTitle}>
-              <span className={type.cardTitleHover}>
-                {t("features.business")}
-              </span>
-            </p>
-          }
+          text={featureTitle("features.business")}
           details={t("features.businessDesc")}
         />
 
         <FeatureCard
           className={`group flex flex-col items-center ${surface.featureCard}`}
           Icon={FaMapMarkedAlt}
-          text={
-            <p className={type.cardTitle}>
-              <span className={type.cardTitleHover}>
-                {t("features.location")}
-              </span>
-            </p>
-          }
+          text={featureTitle("features.location")}
           details={t("features.locationDesc")}
         />
       </div>
