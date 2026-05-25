@@ -1,0 +1,7 @@
+services:
+  pitlane-app:
+    build: .
+    container_name: pitlane-app
+    ports:
+      - "80:8080"
+    restart: unless-stopped

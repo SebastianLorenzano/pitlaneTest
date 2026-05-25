@@ -10,26 +10,21 @@ COPY frontend/ ./
 RUN npm run build
 
 
-# ---------- Stage 2: Build Spring Boot with Corretto 17 ----------
-FROM amazoncorretto:17 AS backend-build
+# ---------- Stage 2: Build Spring Boot ----------
+FROM maven:3.9.9-amazoncorretto-17 AS backend-build
 
 WORKDIR /app
 
-COPY backend/mvnw ./
-COPY backend/.mvn ./.mvn
 COPY backend/pom.xml ./
-
-RUN chmod +x mvnw
-
 COPY backend/src ./src
 
 # Copy React build into Spring Boot static folder
 COPY --from=frontend-build /frontend/dist ./src/main/resources/static
 
-RUN ./mvnw clean package -DskipTests
+RUN mvn clean package -DskipTests
 
 
-# ---------- Stage 3: Runtime container ----------
+# ---------- Stage 3: Runtime ----------
 FROM amazoncorretto:17
 
 WORKDIR /app

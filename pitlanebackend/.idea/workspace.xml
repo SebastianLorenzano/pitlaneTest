@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="82986866-4ada-4165-8847-2390563c94a2" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="351Ae21VglXJvhpFBbiy4u7WTxu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.PitlaneBackendApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/selor/Documents/GitHub/pitlaneTest/pitlanebackend/src/main/java/org/pitlane/backend/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.16992188",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="PitlaneBackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="pitlane-backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.pitlane.backend.PitlaneBackendApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="82986866-4ada-4165-8847-2390563c94a2" name="Changes" comment="" />
+      <created>1762267296053</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1762267296053</updated>
+      <workItem from="1762267297159" duration="1826000" />
+      <workItem from="1762341210262" duration="7567000" />
+      <workItem from="1762423356696" duration="11829000" />
+      <workItem from="1762460757736" duration="790000" />
+      <workItem from="1762514120874" duration="5401000" />
+      <workItem from="1762719799771" duration="324000" />
+      <workItem from="1762941429291" duration="2379000" />
+      <workItem from="1763461688632" duration="1352000" />
+      <workItem from="1763717693149" duration="1278000" />
+      <workItem from="1763985626341" duration="3222000" />
+      <workItem from="1764105989772" duration="923000" />
+      <workItem from="1764153569308" duration="1744000" />
+      <workItem from="1764244892648" duration="1316000" />
+      <workItem from="1764369378464" duration="623000" />
+      <workItem from="1764886825121" duration="646000" />
+      <workItem from="1765280973372" duration="692000" />
+      <workItem from="1765362122723" duration="638000" />
+      <workItem from="1765450329319" duration="707000" />
+      <workItem from="1765540672165" duration="1235000" />
+      <workItem from="1768043937398" duration="600000" />
+      <workItem from="1768056900471" duration="1317000" />
+      <workItem from="1771490618547" duration="1355000" />
+      <workItem from="1776621831636" duration="5657000" />
+      <workItem from="1778843545399" duration="5389000" />
+      <workItem from="1778931567355" duration="1293000" />
+      <workItem from="1779696782352" duration="5648000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
