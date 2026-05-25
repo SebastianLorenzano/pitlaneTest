@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/pitlaneReact.iml" filepath="$PROJECT_DIR$/.idea/pitlaneReact.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/PitlaneHolding.iml" filepath="$PROJECT_DIR$/.idea/PitlaneHolding.iml" />
     </modules>
   </component>
 </project>
