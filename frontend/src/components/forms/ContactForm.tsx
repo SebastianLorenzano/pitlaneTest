@@ -6,7 +6,7 @@ import { sendContactForm } from "../../api/apiContact";
 import Modal from "./Modal";
 
 const ContactForm: React.FC = () => {
-  const { t } = useTranslation("contact");
+  const { t, i18n } = useTranslation("contact");
 
   const [modalOpen, setModalOpen] = useState(false);
   const [modalType, setModalType] = useState<"success" | "error" | "warning">("success");
@@ -58,7 +58,12 @@ const ContactForm: React.FC = () => {
     setIsSubmitting(true);
 
     try {
-      const result = await sendContactForm(data);
+      const contactData = {
+      ...data,
+      language: i18n.resolvedLanguage || i18n.language || "en"
+    };
+
+    const result = await sendContactForm(contactData);
 
       if (result.status === "SUCCESS") {
         setIsSent(true);

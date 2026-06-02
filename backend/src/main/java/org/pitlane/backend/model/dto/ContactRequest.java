@@ -26,6 +26,7 @@ public class ContactRequest {
 
     private String message;
 
+    private String language;
 
     public String getName() {
         return name;
@@ -65,6 +66,14 @@ public class ContactRequest {
 
     public void setMessage(String message) {
         this.message = (message == null) ? "" : message;
+    }
+
+    public String getLanguage() {
+        return language;
+    }
+
+    public void setLanguage(String language) {
+        this.language = language;
     }
 
     @Override
