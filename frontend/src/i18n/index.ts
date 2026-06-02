@@ -44,24 +44,11 @@ i18n
   .use(initReactI18next)
   .init({
     resources: resources,
-
-    // Do NOT force English here.
-    // i18next will detect the browser language automatically.
     fallbackLng: "es",
-
     supportedLngs: supportedLanguages,
-
-    // Converts browser languages like:
-    // en-US -> en
-    // es-ES -> es
-    // pt-BR -> pt
     load: "languageOnly",
-
     detection: {
-      // Use the browser language
       order: ["navigator"],
-
-      // Do not save the detected language
       caches: []
     },
 

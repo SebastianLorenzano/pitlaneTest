@@ -17,6 +17,14 @@ const LANGUAGES = [
   { code: "it", label: "Italiano", flag: itFlag }
 ]
 
+function normalizeLanguage(language: string | undefined): string {
+  if (!language) {
+    return "es"
+  }
+
+  return language.split("-")[0]
+}
+
 export default function LanguageSwitcher() {
   const { i18n } = useTranslation()
   const [open, setOpen] = useState(false)
@@ -40,8 +48,14 @@ export default function LanguageSwitcher() {
     return () => document.removeEventListener("mousedown", handleClickOutside)
   }, [])
 
+  const currentLanguageCode = normalizeLanguage(
+    i18n.resolvedLanguage || i18n.language
+  )
+
   const currentLang =
-    LANGUAGES.find(l => l.code === i18n.language) || LANGUAGES[0]
+    LANGUAGES.find(lang => lang.code === currentLanguageCode) ||
+    LANGUAGES.find(lang => lang.code === "es") ||
+    LANGUAGES[0]
 
   return (
     <div className="relative" ref={dropdownRef}>
@@ -57,8 +71,14 @@ export default function LanguageSwitcher() {
           hover:text-[var(--color-primary)]
         "
       >
-        <img src={currentLang.flag} alt={currentLang.code} className="w-5 h-5 rounded-sm" />
-        <span className="hidden sm:inline">{currentLang.code.toUpperCase()}</span>
+        <img
+          src={currentLang.flag}
+          alt={currentLang.code}
+          className="w-5 h-5 rounded-sm"
+        />
+        <span className="hidden sm:inline">
+          {currentLang.code.toUpperCase()}
+        </span>
         <span className="text-xs ml-1">▼</span>
       </button>
 
@@ -66,7 +86,8 @@ export default function LanguageSwitcher() {
       {open && (
         <div className="absolute top-full mt-2 right-0 w-40 bg-[var(--color-primary)] border rounded-lg shadow-lg z-50">
           {LANGUAGES.map(lang => {
-            const isActive = lang.code === i18n.language
+            const isActive = lang.code === currentLanguageCode
+
             return (
               <button
                 key={lang.code}
@@ -82,7 +103,11 @@ export default function LanguageSwitcher() {
                   }
                 `}
               >
-                <img src={lang.flag} alt={lang.label} className="w-5 h-5 rounded-sm" />
+                <img
+                  src={lang.flag}
+                  alt={lang.label}
+                  className="w-5 h-5 rounded-sm"
+                />
                 {lang.label}
               </button>
             )
