@@ -1,7 +1,7 @@
 import React from "react";
 
 export type TimelineStage = {
-  title: string; // node label (json: "title")
+  title: string;
   contentTitle: string;
   contentText: string;
   contentDetailedText: string;
@@ -19,6 +19,7 @@ export default function Timeline(props: TimelineProps): React.ReactElement {
   var containerRef = React.useRef<HTMLDivElement>(null);
 
   function clampIndex(value: number): number {
+    if (stages.length === 0) return 0;
     if (value < 0) return 0;
     if (value > stages.length - 1) return stages.length - 1;
     return value;
@@ -26,7 +27,10 @@ export default function Timeline(props: TimelineProps): React.ReactElement {
 
   function changeIndex(nextIndex: number): void {
     props.onChange(clampIndex(nextIndex));
-    if (containerRef.current) containerRef.current.focus();
+
+    if (containerRef.current) {
+      containerRef.current.focus();
+    }
   }
 
   function handleKeyDown(e: React.KeyboardEvent<HTMLDivElement>): void {
@@ -34,14 +38,17 @@ export default function Timeline(props: TimelineProps): React.ReactElement {
       e.preventDefault();
       changeIndex(activeIndex - 1);
     }
+
     if (e.key === "ArrowRight") {
       e.preventDefault();
       changeIndex(activeIndex + 1);
     }
+
     if (e.key === "Home") {
       e.preventDefault();
       changeIndex(0);
     }
+
     if (e.key === "End") {
       e.preventDefault();
       changeIndex(stages.length - 1);
@@ -68,7 +75,7 @@ export default function Timeline(props: TimelineProps): React.ReactElement {
       className="w-full outline-none font-orbitron"
     >
       {/* Wrapper with side arrows */}
-      <div className="flex items-center gap-3 sm:gap-4">
+      <div className="flex w-full items-center gap-3 sm:gap-4">
         {/* Left arrow */}
         <button
           type="button"
@@ -78,19 +85,25 @@ export default function Timeline(props: TimelineProps): React.ReactElement {
             if (!isFirst) changeIndex(activeIndex - 1);
           }}
           disabled={isFirst}
-          className="h-11 w-11 sm:h-12 sm:w-12 rounded-lg border-2
+          className="h-11 w-11 shrink-0 rounded-lg border-2
                      border-[var(--color-primary-neon)]/40
+                     bg-[var(--color-primary)]/15
                      text-[var(--color-primary-neon)]
-                     bg-[var(--color-primary)]/15 backdrop-blur-md
-                     hover:bg-[var(--color-primary-neon)] hover:text-[var(--color-primary)]
-                     transition-all duration-300 disabled:opacity-40 disabled:hover:bg-[var(--color-primary)]/15 disabled:hover:text-[var(--color-primary-neon)]"
+                     backdrop-blur-md
+                     transition-all duration-300
+                     hover:bg-[var(--color-primary-neon)]
+                     hover:text-[var(--color-primary)]
+                     disabled:opacity-40
+                     disabled:hover:bg-[var(--color-primary)]/15
+                     disabled:hover:text-[var(--color-primary-neon)]
+                     sm:h-12 sm:w-12"
           aria-label="Previous stage"
         >
           ‹
         </button>
 
         {/* Timeline line + nodes */}
-        <div className="relative w-full py-8">
+        <div className="relative min-w-0 flex-1 py-8">
           {/* Base line */}
           <div className="absolute left-0 right-0 top-1/2 h-[4px] -translate-y-1/2 rounded-full bg-white/10" />
 
@@ -101,7 +114,7 @@ export default function Timeline(props: TimelineProps): React.ReactElement {
           />
 
           {/* Nodes */}
-          <div className="relative flex items-center justify-between">
+          <div className="relative flex w-full items-start justify-between">
             {stages.map(function (stage, index) {
               var isActive = index === activeIndex;
               var isDone = index < activeIndex;
@@ -117,18 +130,20 @@ export default function Timeline(props: TimelineProps): React.ReactElement {
                   onClick={function () {
                     changeIndex(index);
                   }}
-                  className="group flex flex-col items-center gap-3"
+                  className="group flex min-w-0 flex-1 basis-0 flex-col items-center gap-3"
                 >
-                  {/* Node circle (lifted over the line) */}
+                  {/* Node circle */}
                   <span
                     className={[
                       "relative z-10",
                       "grid place-items-center rounded-full transition-all duration-300",
-                      "h-11 w-11 sm:h-12 sm:w-12 border-2",
+                      "h-11 w-11 min-h-[2.75rem] min-w-[2.75rem] shrink-0",
+                      "border-2 leading-none",
                       "-translate-y-1/2",
                       "bg-[var(--color-primary)]/40 backdrop-blur-md",
+                      "sm:h-12 sm:w-12 sm:min-h-[3rem] sm:min-w-[3rem]",
                       isActive
-                        ? "border-[var(--color-primary-neon)] bg-[var(--color-primary-neon)] text-[var(--color-primary)] scale-110"
+                        ? "scale-110 border-[var(--color-primary-neon)] bg-[var(--color-primary-neon)] text-[var(--color-primary)]"
                         : isDone
                         ? "border-[var(--color-primary-neon)]/70 text-[var(--color-text-muted)]"
                         : "border-[var(--color-primary-neon)]/40 text-[var(--color-text-muted)]",
@@ -145,11 +160,13 @@ export default function Timeline(props: TimelineProps): React.ReactElement {
                     {index + 1}
                   </span>
 
-                  {/* Label */}
+                  {/* Label - tablet and desktop only */}
                   <span
                     className={[
-                      "text-[11px] sm:text-xs tracking-wide transition-colors duration-300",
-                      "max-w-[120px] lg:max-w-[140px] text-center",
+                      "hidden sm:block",
+                      "w-full max-w-[120px] text-center text-xs leading-tight tracking-wide transition-colors duration-300",
+                      "lg:max-w-[140px]",
+                      "line-clamp-2",
                       isActive
                         ? "text-[var(--color-primary-neon)]"
                         : "text-[var(--color-text-muted)]/70",
@@ -162,6 +179,11 @@ export default function Timeline(props: TimelineProps): React.ReactElement {
               );
             })}
           </div>
+
+          {/* Active label - mobile only */}
+          <div className="mt-1 text-center text-xs leading-tight tracking-wide text-[var(--color-primary-neon)] sm:hidden">
+            {stages[activeIndex] ? stages[activeIndex].title : ""}
+          </div>
         </div>
 
         {/* Right arrow */}
@@ -173,12 +195,18 @@ export default function Timeline(props: TimelineProps): React.ReactElement {
             if (!isLast) changeIndex(activeIndex + 1);
           }}
           disabled={isLast}
-          className="h-11 w-11 sm:h-12 sm:w-12 rounded-lg border-2
+          className="h-11 w-11 shrink-0 rounded-lg border-2
                      border-[var(--color-primary-neon)]/40
+                     bg-[var(--color-primary)]/15
                      text-[var(--color-primary-neon)]
-                     bg-[var(--color-primary)]/15 backdrop-blur-md
-                     hover:bg-[var(--color-primary-neon)] hover:text-[var(--color-primary)]
-                     transition-all duration-300 disabled:opacity-40 disabled:hover:bg-[var(--color-primary)]/15 disabled:hover:text-[var(--color-primary-neon)]"
+                     backdrop-blur-md
+                     transition-all duration-300
+                     hover:bg-[var(--color-primary-neon)]
+                     hover:text-[var(--color-primary)]
+                     disabled:opacity-40
+                     disabled:hover:bg-[var(--color-primary)]/15
+                     disabled:hover:text-[var(--color-primary-neon)]
+                     sm:h-12 sm:w-12"
           aria-label="Next stage"
         >
           ›
