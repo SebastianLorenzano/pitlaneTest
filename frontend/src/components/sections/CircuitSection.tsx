@@ -69,10 +69,16 @@ function CircuitSection(): React.JSX.Element {
             ["--dot-color" as any]: "var(--color-primary-neon)",
           }}
           onMouseEnter={(e) =>
-            e.currentTarget.style.setProperty("--dot-color", "var(--color-secondary)")
+            e.currentTarget.style.setProperty(
+              "--dot-color",
+              "var(--color-secondary)"
+            )
           }
           onMouseLeave={(e) =>
-            e.currentTarget.style.setProperty("--dot-color", "var(--color-primary-neon)")
+            e.currentTarget.style.setProperty(
+              "--dot-color",
+              "var(--color-primary-neon)"
+            )
           }
         >
           <CircuitAnimation speed={1000} className="w-full" />
@@ -84,7 +90,9 @@ function CircuitSection(): React.JSX.Element {
           <div className={detailRow}>
             <HiLocationMarker className={detailIcon} />
             <p className={detailText}>
-              <span className="text-[var(--color-text)]">{t("locationLabel")}</span>{" "}
+              <span className="text-[var(--color-text)]">
+                {t("locationLabel")}
+              </span>{" "}
               {t("locationValue")}
             </p>
           </div>
@@ -93,7 +101,9 @@ function CircuitSection(): React.JSX.Element {
           <div className={detailRow}>
             <HiClock className={detailIcon} />
             <p className={detailText}>
-              <span className="text-[var(--color-text)]">{t("surfaceLabel")}</span>{" "}
+              <span className="text-[var(--color-text)]">
+                {t("surfaceLabel")}
+              </span>{" "}
               {t("surfaceValue")}
             </p>
           </div>
@@ -113,7 +123,9 @@ function CircuitSection(): React.JSX.Element {
           <div className={`${detailRow} cursor-pointer`}>
             <FaFlagCheckered className={detailIcon} />
             <p className={detailText}>
-              <span className="text-[var(--color-text)]">{t("performanceCenter")}</span>
+              <span className="text-[var(--color-text)]">
+                {t("performanceCenter")}
+              </span>
             </p>
           </div>
 
@@ -121,7 +133,9 @@ function CircuitSection(): React.JSX.Element {
           <div className={detailRow}>
             <GiRaceCar className="text-[var(--color-primary-neon)] text-5xl group-hover:text-[var(--color-secondary)] transition-colors duration-300" />
             <p className={detailText}>
-              <span className="text-[var(--color-text)]">{t("zonesLabel")}</span>{" "}
+              <span className="text-[var(--color-text)]">
+                {t("zonesLabel")}
+              </span>{" "}
               {t("zonesValue")}
             </p>
           </div>
@@ -131,6 +145,7 @@ function CircuitSection(): React.JSX.Element {
       {/* Lower Feature Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 mt-16 text-center z-10 w-full max-w-5xl">
         <FeatureCard
+          autoOpenOnScroll
           className={`group flex flex-col items-center ${surface.featureCard}`}
           Icon={GiProcessor}
           text={featureTitle("features.structure")}
@@ -138,6 +153,7 @@ function CircuitSection(): React.JSX.Element {
         />
 
         <FeatureCard
+          autoOpenOnScroll
           className={`group flex flex-col items-center ${surface.featureCard}`}
           Icon={FaChartLine}
           text={featureTitle("features.business")}
@@ -145,13 +161,13 @@ function CircuitSection(): React.JSX.Element {
         />
 
         <FeatureCard
+          autoOpenOnScroll
           className={`group flex flex-col items-center ${surface.featureCard}`}
           Icon={FaMapMarkedAlt}
           text={featureTitle("features.location")}
           details={t("features.locationDesc")}
         />
       </div>
-
     </section>
   )
 }
